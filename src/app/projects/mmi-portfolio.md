@@ -1,0 +1,18 @@
+---
+title: "MMI Portfolio"
+project-type: "Website"
+technologies: "React-Scss"
+date: "03-2023"
+short-description: "Site internet réalisé avec React et la librairie framer motion, ayant pour but de mettre en avant différent projet que j’ai pu réalisé au cours de ma formation."
+url: "https://mmi-portfolio.netlify.app/"
+main-img: ""
+illustrations-imgs: ""
+long-description: "Ce site assez petit m’a surtout permis de mettre en pratique les bases de React avec par exemple les components et comment bien les utilisés mais surtout comment se structure et s’organise un projet.
+J’ai aussi pu utiliser la librairie framer motion pour créer différentes animations.
+
+Ce projet faisant partie de la formation en ligne que je suis-je n’ai pas eu à réaliser le style et j’ai seulement modifier quelques variables scss pour le personaliser."
+tools:
+  logos: "Vscode, React, Scss"
+  tools-description: "Utilisation de React pour la réalisation de l’ensemble du site internet et de Scss pour ce qui est du style. Le site s’appuie sur l’API ‘the movie database’ pour récupérer toutes les informations de chaque film."
+  url-github: "https://github.com/ccadran/mmi-portfolio"
+---
