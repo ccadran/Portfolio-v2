@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 const projectsDirectory = path.join(process.cwd(), "src", "projectPosts");
 
-export function getSortedPostData() {
+export function getSortedProjectData() {
   const fileNames = fs.readdirSync(projectsDirectory);
   const allProjectsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");
