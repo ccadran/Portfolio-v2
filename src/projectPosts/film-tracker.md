@@ -1,21 +1,21 @@
 ---
 title: "Film Tracker"
-project-type: "website"
+projectType: "website"
 technologies: "React-Scss"
-date: "04-2023"
-short-description: "Site internet permettant de trouver rapidement un film, de découvrir sa note, son synopsis, son genre …
+date: "2023-03-14"
+shortDescription: "Site internet permettant de trouver rapidement un film, de découvrir sa note, son synopsis, son genre …
 Il est par la suite possible de classer ses films par leurs notes.
 On peut également ajouter un film dans nos favoris pour facilement les retrouver."
 url: "https://film-tracker.netlify.app/"
-main-img: ""
-illustrations-imgs: ""
-long-description: "Ce projet réalisé en React m’a permis de valider beaucoup de concept du framework.
+mainImg: ""
+illustrationsImgs: ""
+longDescription: "Ce projet réalisé en React m’a permis de valider beaucoup de concept du framework.
 
 Le site permet de trouver rapidement un film à partir de son nom grâce a l’appel a une API, les résultats s’affichent ensuite dans des « card ». L’ensemble des résultats peuvent être par la suite trier de façon croissante ou décroissant par rapport à leurs notes.
 
 La « card » a une fonctionnalité qui permet d’ajouter un film dans nos favoris, en les stockants dans le local storage."
 tools:
   logos: "Vscode, React, Scss"
-  tools-description: "Utilisation de React pour la réalisation du projet mais également de la librairie framer motion qui m’a permis de créer des animations et d’en randomiser certaines."
-  url-github: "https://github.com/ccadran/film-tracker"
+  toolsDescription: "Utilisation de React pour la réalisation du projet mais également de la librairie framer motion qui m’a permis de créer des animations et d’en randomiser certaines."
+  urlGithub: "https://github.com/ccadran/film-tracker"
 ---
