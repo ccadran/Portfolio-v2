@@ -1,5 +1,13 @@
-import { getSortedProjectData } from "@/lib/projects";
+import { getProjectData, getSortedProjectData } from "@/lib/projects";
 import { notFound } from "next/navigation";
+import Link from "next/link";
+
+export function generateStaticParams() {
+  const projects = getSortedProjectData();
+  return projects.map((project) => ({
+    projectId: project.id,
+  }));
+}
 
 export function generateMetadata({
   params,
@@ -33,5 +41,33 @@ export default async function Project({
     return notFound();
   }
 
-  return <div>page</div>;
+  const {
+    title,
+    projectType,
+    technologies,
+    date,
+    shortDescription,
+    url,
+    mainImg,
+    illustrationsImgs,
+    longDescription,
+    tools,
+    contentHtml,
+  } = await getProjectData(projectId);
+
+  return (
+    <main>
+      <h2>{title}</h2>
+      <p>
+        {projectType}
+        {date}
+      </p>
+      <p>{shortDescription}</p>
+      <Link href={url}>Visit the project</Link>
+      <p>{longDescription}</p>
+      <p>{tools.logos}</p>
+      <p>{tools.toolsDescription}</p>
+      <Link href={tools.urlGithub}>Github</Link>{" "}
+    </main>
+  );
 }
