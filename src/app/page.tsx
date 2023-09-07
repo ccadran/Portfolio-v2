@@ -14,6 +14,7 @@ export default function Home() {
         </span>
       </p>
       <ProjectHome />
+      <img src="/images/logos/CSS.svg" alt="" width="50px" height="50px" />
     </main>
   );
 }

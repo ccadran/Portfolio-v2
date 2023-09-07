@@ -1,4 +1,5 @@
 import { getProjectData, getSortedProjectData } from "@/lib/projects";
+import { getLogosImgs } from "@/lib/logos";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -55,6 +56,9 @@ export default async function Project({
     contentHtml,
   } = await getProjectData(projectId);
 
+  const logosImgs = await getLogosImgs(tools.logos);
+  console.log(logosImgs);
+
   return (
     <main>
       <h2>{title}</h2>
@@ -65,8 +69,10 @@ export default async function Project({
       <p>{shortDescription}</p>
       <Link href={url}>Visit the project</Link>
       <p>{longDescription}</p>
-      <p>{tools.logos}</p>
       <p>{tools.toolsDescription}</p>
+      {logosImgs.map((logoImg) => (
+        <img src={logoImg} alt="" width="50px" height="50px" />
+      ))}
       <Link href={tools.urlGithub}>Github</Link>{" "}
     </main>
   );
