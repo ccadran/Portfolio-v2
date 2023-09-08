@@ -7,8 +7,8 @@ shortDescription: "Site internet permettant de trouver rapidement un film, de d�
 Il est par la suite possible de classer ses films par leurs notes.
 On peut également ajouter un film dans nos favoris pour facilement les retrouver."
 url: "https://film-tracker.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/film/cover.png"
+illustrationsImgs: ["/images/film/illustration-1.png", "/images/film/illustration-2.png", "/images/film/illustration-3.png"]
 longDescription: "Ce projet réalisé en React m’a permis de valider beaucoup de concept du framework.
 
 Le site permet de trouver rapidement un film à partir de son nom grâce a l’appel a une API, les résultats s’affichent ensuite dans des « card ». L’ensemble des résultats peuvent être par la suite trier de façon croissante ou décroissant par rapport à leurs notes.

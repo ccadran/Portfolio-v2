@@ -7,8 +7,8 @@ shortDescription: "Site internet permettant de trouver un pays en fonction de so
 
 J’ai réalisé ce projet à l’aide d’une API gratuite dans le cadre de la formation en ligne que je suis."
 url: "https://country-finder-api.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/country/cover.png"
+illustrationsImgs: ["/images/country/illustration-1.png", "/images/country/illustration-2.png", "/images/country/illustration-3.png"]
 longDescription: "Visuellement assez simple, ce projet m’a surtout permis de travailler beaucoup d’éléments de Javascript. En effet, j'ai pour la première fois pu utiliser une API, j’ai donc appris à utiliser les fetchs et ce qui va avec.
 
 La logique de ce site est assez simple. L’utilisateur tape des lettres dans la barre de recherche et en récupérant ce qui est tapé dedans, j’affiche les pays comprenant les lettres tapées. Puis l’utilisateur a le choix de trier ces résultats à l’aide de plusieurs paramètres :

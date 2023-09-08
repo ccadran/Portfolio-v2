@@ -17,7 +17,7 @@ export default function Home() {
       <section className="about mt-12 sm:mt-32 lg:48">
         <h2>About me</h2>
         <div className="img-container">
-          <img src="/images/about.png" alt="photo clario" />
+          <img src="/images/about.jpg" alt="photo clario" />
         </div>
         <p>
           Bienvenue sur mon Portfolio ! <br />

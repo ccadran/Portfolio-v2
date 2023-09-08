@@ -7,7 +7,7 @@ type Project = {
   shortDescription: string;
   url: string;
   mainImg: string;
-  illustrationsImgs: string;
+  illustrationsImgs: string[];
   longDescription: string;
   tools: {
     logos: string;

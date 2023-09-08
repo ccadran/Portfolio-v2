@@ -6,8 +6,8 @@ date: "2023-03-14"
 shortDescription: "Ce projet m’a permis de découvrir la programmation orientée objet sur JavaScript.
 Il consiste à choisir ses exercices parmi une liste, de les mettre dans l’ordre souhaité, d’en choisir la durée puis de lancer la séance. Ce projet m’a permis de comprendre beaucoup de notions."
 url: "https://sport-exercice-app.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/sport/cover.png"
+illustrationsImgs: ["/images/sport/illustration-1.png", "/images/sport/illustration-2.png", "/images/sport/illustration-3.png"]
 longDescription: "Le projet consistait à créer un site pour mettre en pratique la programmation orientée objet sur Javascript.
 
 Sur le site on retrouve donc dans un premier temps une vue où l’on peut sélectionner les exercices voulus et modifier le temps de ceux-ci. On peut également les changer de place grâce à un bouton les déplaçant vers la gauche mais aussi supprimer ceux dont on n'a pas besoin. Cela marche grâce à un array qui évolue en fonction des différents événements.

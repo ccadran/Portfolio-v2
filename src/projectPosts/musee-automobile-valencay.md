@@ -6,8 +6,8 @@ date: "2023-03-14"
 shortDescription: "Un projet d’étude dans lequel nous avons pu réaliser la refonte d’un site.
 Dans ce projet j’ai donc participé à la refonte (choix des typos, charte graphique, hiérarchisation...) mais surtout au développement du site, avec une homepage assez épurée et une page collection plus complexe."
 url: "https://musee-automobile-valencay.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/musee/cover.png"
+illustrationsImgs: ["/images/musee/illustration-1.png", "/images/musee/illustration-2.png", "/images/musee/illustration-3.png"]
 longDescription: "Ce projet a été réalisé en deux étapes :
 
 Une première semaine au cours de laquelle nous avons travaillé sur la refonte du site afin de produire une maquette. J’ai donc participé à la création de la charte graphique dans son ensemble, à la hiérarchisation des contenus…

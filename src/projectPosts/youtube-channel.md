@@ -7,8 +7,8 @@ shortDescription: "Dans cette chaine lancée en 2020 je traite de différents su
 
 Ce projet m’a permis d’acquérir des compétences en montage vidéo, surtout sur Premier Pro mais aussi sur After Effects. J’ai également pu m’améliorer en termes d’écriture et d’aisance à l’oral."
 url: "https://www.youtube.com/@Clario_"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/youtube/cover.png"
+illustrationsImgs: ["/images/youtube/illustration-1.png", "/images/youtube/illustration-2.png", "/images/youtube/illustration-3.png"]
 longDescription: "Après une longue pause de plus d’un an, j’ai repris les vidéos début 2023 et entamé un rebranding de ma chaine.
 
 J’ai donc choisi une nouvelle direction artistique, c’est à dire les polices et les couleurs que j’utiliserai dans mes vidéos et pour l’identité graphique de ma chaine, une nouvelle photo de profil et une nouvelle bannière…

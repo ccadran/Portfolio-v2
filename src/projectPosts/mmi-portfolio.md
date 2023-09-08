@@ -5,8 +5,8 @@ technologies: "React-Scss"
 date: "2023-03-14"
 shortDescription: "Site internet réalisé avec React et la librairie framer motion, ayant pour but de mettre en avant différent projet que j’ai pu réalisé au cours de ma formation."
 url: "https://mmi-portfolio.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/mmi/cover.png"
+illustrationsImgs: ["/images/mmi/illustration-1.png", "/images/mmi/illustration-2.png", "/images/mmi/illustration-3.png"]
 longDescription: "Ce site assez petit m’a surtout permis de mettre en pratique les bases de React avec par exemple les components et comment bien les utilisés mais surtout comment se structure et s’organise un projet.
 J’ai aussi pu utiliser la librairie framer motion pour créer différentes animations.
 

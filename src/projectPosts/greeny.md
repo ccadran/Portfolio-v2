@@ -5,8 +5,8 @@ technologies: "Html-Scss"
 date: "2023-03-14"
 shortDescription: "Dans le cadre du projet Reebot, j’ai pour mon groupe, codé ce site avec un principe de questionnaire permettant de noter les habitudes technologiques de l’utilisateur en termes de responsabilité écologique. Ce projet m’a permis d’approfondir Javascript."
 url: "https://greeny-tech.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/greeny/cover.png"
+illustrationsImgs: ["/images/greeny/illustration-1.png", "/images/greeny/illustration-2.png", "/images/greeny/illustration-3.png"]
 longDescription: "Projet réalisé lors du Hackaton Reboot visant à trouver des solutions permettant à des étudiants de produire des solutions responsables.
 
 Avec mon groupe nous avons eu l’idée de créer un questionnaire permettant à l’utilisateur de tester sa responsabilité écologique en termes de technologies.

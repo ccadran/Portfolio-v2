@@ -5,8 +5,8 @@ technologies: "Html-Scss"
 date: "2023-03-14"
 shortDescription: "Intégration d’une maquette responsive, présentant le concept « Moto Montblanc ». Les assets ont été désignées par Huigyu Kim et la maquette par Dmitry Kiiashko. J’ai intégré cette maquette en faisant du mobile first."
 url: "https://montblanc-moto.netlify.app/"
-mainImg: ""
-illustrationsImgs: ""
+mainImg: "/images/montblanc/cover.png"
+illustrationsImgs: ["/images/montblanc/illustration-1.png", "/images/montblanc/illustration-2.png", "/images/montblanc/illustration-3.png"]
 longDescription: "En partant d’une maquette mobile trouvée sur Dribble j’ai designé la page pour toutes les autres tailles d’écran, j’ai donc pour la première fois fait du mobile first.
 
 J’ai fortement apprécié travailler sur ce projet qui m’a permis d’approfondir beaucoup de notions en CSS et également en Javascript.

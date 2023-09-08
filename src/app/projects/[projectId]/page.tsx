@@ -70,6 +70,10 @@ export default async function Project({
       <Link href={url}>Visit the project</Link>
       <p>{longDescription}</p>
       <p>{tools.toolsDescription}</p>
+      <img src={mainImg} alt="" />
+      {illustrationsImgs.map((illustrationImg) => (
+        <img src={illustrationImg} alt="" />
+      ))}
       {logosImgs.map((logoImg) => (
         <img src={logoImg} alt="" width="50px" height="50px" />
       ))}
