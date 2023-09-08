@@ -3,6 +3,7 @@ import ListItem from "./ListItem";
 
 export default function ProjectHome() {
   const projects = getSortedProjectData();
+  console.log(projects);
 
   return (
     <section>
