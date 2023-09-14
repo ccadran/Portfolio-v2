@@ -2,6 +2,8 @@ import { getProjectData, getSortedProjectData } from "@/lib/projects";
 import { getLogosImgs } from "@/lib/logos";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Button from "@/app/components/Button";
+import "../../../style/pages/_project.scss";
 
 export function generateStaticParams() {
   const projects = getSortedProjectData();
@@ -61,23 +63,46 @@ export default async function Project({
 
   return (
     <main>
-      <h2>{title}</h2>
-      <p>
-        {projectType}
-        {date}
-      </p>
-      <p>{shortDescription}</p>
-      <Link href={url}>Visit the project</Link>
-      <p>{longDescription}</p>
-      <p>{tools.toolsDescription}</p>
-      <img src={mainImg} alt="" />
-      {illustrationsImgs.map((illustrationImg) => (
-        <img src={illustrationImg} alt="" />
-      ))}
-      {logosImgs.map((logoImg) => (
-        <img src={logoImg} alt="" width="50px" height="50px" />
-      ))}
-      <Link href={tools.urlGithub}>Github</Link>{" "}
+      <section className="hero">
+        <h1>{title}</h1>
+        <div className="presentation">
+          <h4>
+            {projectType} * {technologies} * {date.slice(6, 10)}
+          </h4>
+          <p>{shortDescription}</p>
+          <Button link={url} text="Voir le projet" />
+        </div>
+      </section>
+      <div className="cover">
+        <img src={mainImg} alt="" />
+      </div>
+      <section className="project-description">
+        <div className="txt-project">
+          <h4>{title}</h4>
+          <p>{longDescription}</p>
+        </div>
+        <div className="img-project">
+          {illustrationsImgs.map((illustrationImg) => (
+            <div className="img-container">
+              <img src={illustrationImg} alt="" />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="tools">
+        <h2>Tools</h2>
+        <div className="tools-container">
+          <ul>
+            {logosImgs.map((logoImg) => (
+              <li>
+                <img src={logoImg} alt="" width="50px" height="50px" />
+              </li>
+            ))}
+          </ul>
+          <p>{tools.toolsDescription}</p>
+          <Button link={tools.urlGithub} text="Voir le code" />
+        </div>
+      </section>
     </main>
   );
 }

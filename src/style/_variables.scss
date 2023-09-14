@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "barracuda-bold";
+  src: url(../../public/assets/fonts/BARRACUDA-BOLD.TTF);
+}
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(../../public/assets/fonts/Satoshi-Regular.otf);
+}
+
+$barracuda: barracuda-bold, serif;
+$satoshi: satoshi-regular, sans-serif;
+
+$white: #fff;

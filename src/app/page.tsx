@@ -1,48 +1,52 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import ProjectHome from "./components/ProjectHome";
+import "../style/pages/_home.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="mx-16">
-      <section className="hero flex flex-col justify-between mx-auto items-start py-24 md:flex-row md:items-end  md:py-48 ">
+    <main>
+      <section className="hero">
         <h1>
           Clario <br />
           Cadran
         </h1>
-        <h3 className="text-right ml-auto ">Web Developer</h3>
+        <h3>Web devloper</h3>
       </section>
-      <section className="about mt-12 sm:mt-32 lg:48">
+      <section className="about-me">
         <h2>About me</h2>
-        <div className="img-container">
-          <img src="/assets/images/about.jpg" alt="photo clario" />
+        <div className="about-me__container">
+          <div className="img-container">
+            <img src="/assets/images/about.jpg" alt="" />
+          </div>
+          <p>
+            Bienvenue sur mon Portfolio ! <br />
+            <br />
+            Je suis Clario Cadran, passionné par le développement web dans son
+            ensemble et pour l’instant plus orienté sur le front-end. <br />
+            <br />
+            Je suis actuellement Étudiant en première année du BUT MMI (Métiers
+            du Multimédia et de l’Internet) à Bordeaux.
+            <br />
+            <br />
+            Dans ce portfolio vous allez pouvoir retrouver tous les projets que
+            j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
+          </p>
         </div>
+      </section>
+      <section className="projects">
+        <h2>Projects</h2>
         <p>
-          Bienvenue sur mon Portfolio ! <br />
+          L’ensemble de mes projets réalisés durant mes années MMI et mon temps
+          personnel.
           <br />
-          Je suis Clario Cadran, passionné par le développement web dans son
-          ensemble et pour l’instant plus orienté sur le front-end. <br />
-          <br />
-          Je suis actuellement Étudiant en première année du BUT MMI (Métiers du
-          Multimédia et de l’Internet) à Bordeaux.
-          <br />
-          <br />
-          Dans ce portfolio vous allez pouvoir retrouver tous les projets que
-          j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
+          Principalement en développement web mais également en photographies,
+          montages, audio-visuels…
         </p>
+        <ProjectHome />
       </section>
     </main>
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //   <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
-    //     Hello and Welcome 👋&nbsp;
-    //     <span className="whitespace-nowrap">
-    //       I&apos;m <span className="font-bold">Clario</span>.
-    //     </span>
-    //   </p>
-    //   <ProjectHome />
-    //   <img src="/assets/images/logos/CSS.svg" alt="" width="50px" height="50px" />
-    // </main>
   );
 }

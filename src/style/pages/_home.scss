@@ -1,0 +1,109 @@
+@import "../variables";
+
+main {
+  margin: 0 clamp(30px, 6vw, 60px);
+  .hero {
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    @media screen and (max-width: 757px) {
+      flex-direction: column;
+      align-items: start;
+      padding: 100px 0;
+    }
+
+    h1 {
+      font-family: $barracuda;
+      font-size: 160px;
+      @media screen and (max-width: 967px) {
+        font-size: 130px;
+      }
+      @media screen and (max-width: 537px) {
+        font-size: 100px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 757px) {
+        margin-bottom: 40px;
+      }
+    }
+    h3 {
+      font-family: $barracuda;
+      font-size: 64px;
+      margin-right: 50px;
+      margin-bottom: -50px;
+      text-align: right;
+      padding-left: 50px;
+      @media screen and (max-width: 967px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 537px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 757px) {
+        margin-left: auto;
+      }
+
+      &:after {
+        content: url(/asstets/img/svg-deco.svg);
+        position: absolute;
+        right: 0;
+        top: 100px;
+        z-index: -2;
+      }
+    }
+  }
+
+  .about-me {
+    margin-top: 200px;
+    @media screen and (max-width: 537px) {
+      margin-top: 50px;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+    .about-me__container {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 967px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media screen and (max-width: 537px) {
+        align-items: flex-start;
+      }
+      .img-container {
+        width: 50%;
+        display: flex;
+
+        justify-content: left;
+        @media screen and (max-width: 967px) {
+          width: 70%;
+          justify-content: center;
+          margin-bottom: 50px;
+        }
+        @media screen and (max-width: 537px) {
+          justify-content: flex-start;
+        }
+        img {
+          width: 70%;
+          height: 80%;
+          object-fit: cover;
+        }
+      }
+      p {
+        width: 50%;
+        @media screen and (max-width: 967px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

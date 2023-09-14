@@ -1,17 +1,18 @@
 import { getSortedProjectData } from "@/lib/projects";
-import ListItem from "./ListItem";
+import ListItemHome from "./ListItemHome";
+import "../../style/components/_projectHome.scss";
 
 export default function ProjectHome() {
   const projects = getSortedProjectData();
   console.log(projects);
 
   return (
-    <section>
+    <div className="projects-container">
       <ul>
         {projects.map((project) => (
-          <ListItem key={project.id} project={project} />
+          <ListItemHome key={project.id} project={project} />
         ))}
       </ul>
-    </section>
+    </div>
   );
 }

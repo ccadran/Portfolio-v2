@@ -4,7 +4,7 @@ projectType: "Website"
 technologies: "Html-Scss"
 date: "19-10-2022"
 shortDescription: "Un projet d’étude dans lequel nous avons pu réaliser la refonte d’un site.
-Dans ce projet j’ai donc participé à la refonte (choix des typos, charte graphique, hiérarchisation...) mais surtout au développement du site, avec une homepage assez épurée et une page collection plus complexe."
+Dans ce projet j’ai donc participé à la refonte (choix des typos, charte graphique, hiérarchisation..) mais surtout au développement du site, avec une homepage assez épurée et une page collection plus complexe."
 url: "https://musee-automobile-valencay.netlify.app/"
 mainImg: "/assets/images/musee/cover.png"
 illustrationsImgs: ["/assets/images/musee/illustration-1.png", "/assets/images/musee/illustration-2.png", "/assets/images/musee/illustration-3.png"]
