@@ -37,8 +37,19 @@ export function getSortedProjectData() {
 
     return project;
   });
-  return allProjectsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return allProjectsData.sort((a, b) => {
+    if (a.date.slice(6, 10) === b.date.slice(6, 10)) {
+      if (a.date.slice(3, 5) === b.date.slice(3, 5)) {
+        return a.date.slice(0, 2) < b.date.slice(0, 2) ? 1 : -1;
+      } else {
+        return a.date.slice(3, 5) < b.date.slice(3, 5) ? 1 : -1;
+      }
+    } else {
+      return a.date.slice(6, 10) < b.date.slice(6, 10) ? 1 : -1;
+    }
+  });
 }
+
 export async function getProjectData(id: string) {
   const fullPath = path.join(projectsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
