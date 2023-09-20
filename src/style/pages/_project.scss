@@ -1,5 +1,74 @@
 @import "../variables";
 main {
+  .hero {
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    @media screen and (max-width: 757px) {
+      flex-direction: column;
+      align-items: start;
+      padding: 100px 0;
+    }
+
+    h1 {
+      font-family: $barracuda;
+      font-size: 160px;
+      @media screen and (max-width: 967px) {
+        font-size: 130px;
+      }
+      @media screen and (max-width: 537px) {
+        font-size: 100px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 757px) {
+        margin-bottom: 40px;
+      }
+    }
+    .presentation {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 1023px) {
+        margin-left: auto;
+        width: 60%;
+      }
+      @media screen and (max-width: 707px) {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      h4 {
+        padding: 15px 0;
+        font-family: $satoshi;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px;
+        margin: 50px 0;
+      }
+      .view-project {
+        width: 150px;
+        padding: 15px;
+        font-family: $barracuda;
+        font-size: 18px;
+        transition: 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
   .cover {
     max-width: 2100px;
     margin: 100px auto 200px auto;

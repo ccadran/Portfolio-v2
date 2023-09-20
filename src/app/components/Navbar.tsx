@@ -5,25 +5,21 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-container">
-        <h4>Home</h4>
+        <Link href="/">
+          <h4>Home</h4>
+        </Link>
         <ul>
           <li>
-            <a href="./Projects/projects.html">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a className="burger-child" href="#about">
-              About Me
-            </a>
+            <Link href="/#about">About me</Link>
           </li>
           <li>
-            <a className="burger-child" href="#skills">
-              Skills
-            </a>
+            <Link href="/#skills">Skills</Link>
           </li>
           <li>
-            <a className="burger-child" href="#contact">
-              Contact
-            </a>
+            <Link href="/#contact">Contact</Link>
           </li>
         </ul>
         <div className="toggle-btn" id="btn">

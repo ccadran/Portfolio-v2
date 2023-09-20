@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
         <h3>Web devloper</h3>
       </section>
-      <section className="about-me">
+      <section className="about-me" id="about">
         <h2>About me</h2>
         <div className="about-me__container">
           <div className="img-container">
