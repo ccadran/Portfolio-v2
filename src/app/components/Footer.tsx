@@ -7,13 +7,23 @@ export default function Footer() {
       <div className="main-footer">
         <div className="left-footer">
           <ul>
-            <Link href="/">Home</Link>
-            <Link href="/projects">Home</Link>
-            <Link href="/">Skills</Link>
-            <Link href="/">Contact</Link>
+            <li>
+              <Link href="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="/#about">About me</Link>
+            </li>
+            <li>
+              <Link href="/#skills">Skills</Link>
+            </li>
+            <li>
+              <Link href="/#contact">Contact</Link>
+            </li>
           </ul>
           <div className="footer-contact">
-            <p>clar.cadran@gmail.com</p>
+            <a href="mailto:clar.cadran@gmail.com" id="mail">
+              clar.cadran@gmail.com{" "}
+            </a>
             <ul>
               <Link
                 href="https://www.linkedin.com/in/clario-cadran-82b20b209/"
