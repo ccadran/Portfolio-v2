@@ -1,7 +1,32 @@
+"use client";
+
+import React, { useEffect } from "react";
 import Link from "next/link";
 import "../../style/components/_nav.scss";
 
 export default function Navbar() {
+  useEffect(() => {
+    let lastScroll = 0;
+    const nav = document.querySelector("nav");
+    const btnBurger = document.getElementById("btn");
+
+    if (nav) {
+      window.addEventListener("scroll", () => {
+        if (btnBurger?.classList.contains("active")) {
+          // Ajoutez ici la logique pour gérer le défilement lorsque le bouton burger est actif
+        } else {
+          if (window.scrollY < lastScroll) {
+            nav.style.top = "0"; // Assurez-vous d'ajouter une valeur de chaîne pour 'top'
+          } else {
+            nav.style.top = "-100px"; // Assurez-vous d'ajouter une valeur de chaîne pour 'top'
+          }
+        }
+
+        lastScroll = window.scrollY;
+      });
+    }
+  }, []);
+
   return (
     <nav>
       <div className="nav-container">

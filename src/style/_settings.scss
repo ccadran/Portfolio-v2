@@ -6,6 +6,7 @@ body {
   background: black;
   color: $white;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   section {
     margin-top: clamp(100px, 20vw, 200px);
   }

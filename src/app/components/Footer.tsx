@@ -60,7 +60,7 @@ export default function Footer() {
         <button id="legal">
           <a href="./mentions legales/mentions.html">Mentions légales</a>
         </button>
-        <p>Copyright © 2022. Tous droits réservés.</p>
+        <p>Copyright © 2023. Tous droits réservés.</p>
       </div>
     </footer>
   );

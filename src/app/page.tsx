@@ -47,6 +47,7 @@ export default function Home() {
         </p>
         <ProjectHome />
       </section>
+      <section id="contact"></section>
     </main>
   );
 }
