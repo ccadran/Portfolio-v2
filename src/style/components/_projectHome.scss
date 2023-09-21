@@ -1,5 +1,6 @@
 .projects-home {
   .projects-container {
+    position: relative;
     margin: 0 60px;
     margin-top: clamp(72px, 9vw, 148px);
 
@@ -10,6 +11,16 @@
       row-gap: clamp(40px, 10vw, 100px);
       @media screen and (max-width: 967px) {
         grid-template-columns: 100%;
+      }
+    }
+    &:after {
+      content: url(../../../public/assets/images/svg-deco.svg);
+      position: absolute;
+      left: -600px;
+      top: 0;
+      z-index: -2;
+      @media screen and (max-width: 640px) {
+        content: "";
       }
     }
   }

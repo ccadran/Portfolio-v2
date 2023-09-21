@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import ProjectHome from "./components/ProjectHome";
 import "../style/pages/_home.scss";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,7 +48,37 @@ export default function Home() {
         </p>
         <ProjectHome />
       </section>
-      <section id="contact"></section>
+      <section id="contact" className="contact">
+        <h2>Contact me</h2>
+        <div className="infos-contact">
+          <a href="mailto:clar.cadran@gmail.com" id="mail">
+            clar.cadran@gmail.com{" "}
+          </a>
+          <ul>
+            <Link
+              href="https://www.linkedin.com/in/clario-cadran-82b20b209/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/logos/linkedin-white.svg" alt="" />
+            </Link>
+            <Link
+              href="https://www.instagram.com/clario_cdrn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/logos/Instagram-white.svg" alt="" />
+            </Link>
+            <Link
+              href="https://github.com/ccadran"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/logos/Github-white.svg" alt="" />
+            </Link>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }

@@ -166,7 +166,7 @@ main {
         left: -600px;
         top: -500px;
         z-index: -2;
-        @media screen and (max-width: 465px) {
+        @media screen and (max-width: 640px) {
           content: "";
         }
       }
