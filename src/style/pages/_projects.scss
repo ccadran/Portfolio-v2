@@ -42,7 +42,7 @@ main {
         content: url(../../../public/assets/images/svg-deco.svg);
         position: fixed;
         left: -500px;
-        top: 0;
+        top: -100px;
         z-index: -2;
         overflow-x: hidden;
         @media screen and (max-width: 508px) {

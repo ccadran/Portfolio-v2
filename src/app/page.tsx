@@ -36,7 +36,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="projects">
+      <section className="projects-home">
         <h2>Projects</h2>
         <p>
           L’ensemble de mes projets réalisés durant mes années MMI et mon temps
