@@ -30,7 +30,7 @@ export default function ListItemProjects({ project }: Props) {
       VanillaTilt.init(projectElement, {
         max: 5,
         speed: 10,
-        glare: true,
+        glare: false,
         "max-glare": 20,
       });
     }
@@ -49,7 +49,11 @@ export default function ListItemProjects({ project }: Props) {
           <h4>
             {projectType} * {technologies} * {date.slice(6, 10)}
           </h4>
-          <Button link={`/projects/${id}`} text="Voir le projet" />
+          <Button
+            link={`/projects/${id}`}
+            text="Voir le projet"
+            newTab={false}
+          />
         </div>
       </div>
     </div>

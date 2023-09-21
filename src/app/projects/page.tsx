@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProjectProjects from "../components/ProjectProjects";
+import "../../style/pages/_projects.scss";
 
 export default function ProjectsPage() {
   return (

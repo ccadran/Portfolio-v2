@@ -70,7 +70,7 @@ export default async function Project({
             {projectType} * {technologies} * {date.slice(6, 10)}
           </h4>
           <p>{shortDescription}</p>
-          <Button link={url} text="Voir le projet" />
+          <Button link={url} text="Voir le projet" newTab={true} />
         </div>
       </section>
       <div className="cover">
@@ -100,7 +100,7 @@ export default async function Project({
             ))}
           </ul>
           <p>{tools.toolsDescription}</p>
-          <Button link={tools.urlGithub} text="Voir le code" />
+          <Button link={tools.urlGithub} text="Voir le code" newTab={true} />
         </div>
       </section>
     </main>
