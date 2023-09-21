@@ -10,7 +10,7 @@
     width: 90%;
     margin: 100px auto;
     padding: 30px 50px;
-    // background: $black;
+    background-color: black;
     transform-style: preserve-3d;
     transform: perspective(2000px);
     @media screen and (max-width: 1023px) {
@@ -119,4 +119,11 @@
       }
     }
   }
+}
+
+.js-tilt-glare-inner {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  background-image: none !important;
 }
