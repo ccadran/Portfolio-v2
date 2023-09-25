@@ -1,29 +1,20 @@
 .btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
   overflow: hidden;
-  border-radius: 60px;
-  border: 0;
-  border-color: rgba(37, 35, 36, 0.2);
-  cursor: pointer;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  border-radius: 40px;
+  // border: 0;
+  // border-color: rgba(37, 35, 36, 0.2);
+  // cursor: pointer;
+  // width: -webkit-fit-content;
+  // width: -moz-fit-content;
   width: fit-content;
-  z-index: 0;
+  // z-index: 0;
   height: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
   background: white;
   color: black;
   a {
@@ -33,10 +24,20 @@
       // animation: btnHover1 0.5s ease-in-out forwards;
 
       span:nth-child(1) {
-        animation: span1Animation 0.5s ease-in-out forwards;
+        animation: span1Animation 0.3s ease-in-out forwards;
       }
       span:nth-child(2) {
-        animation: span2Animation 0.5s ease-in-out 0.2s forwards;
+        animation: span2Animation 0.3s ease-in-out 0.2s forwards;
+      }
+    }
+    &:not(:hover) {
+      // animation: btnHover1 0.5s ease-in-out forwards;
+
+      span:nth-child(1) {
+        animation: span1AnimationReverse 0.3s ease-in-out forwards;
+      }
+      span:nth-child(2) {
+        animation: span2AnimationReverse 0.3s ease-in-out forwards;
       }
     }
     span {
@@ -49,22 +50,12 @@
   }
 }
 
-// @keyframes btnHover1 {
-//   0% {
-//     /* Pas besoin de changer l'opacité ici */
-//   }
-//   100% {
-//   }
-// }
-
 @keyframes span1Animation {
   0% {
     transform: translateY(55%);
     opacity: 1; /* Définir l'opacité à 1 au début de l'animation */
   }
-  50% {
-    opacity: 0.8;
-  }
+
   100% {
     transform: translateY(-55%);
     opacity: 0; /* Définir l'opacité à 0 à la fin de l'animation */
@@ -81,5 +72,31 @@
     transform: translateY(-55%);
 
     opacity: 1; /* Définir l'opacité à 1 à la fin de l'animation */
+  }
+}
+@keyframes span1AnimationReverse {
+  0% {
+    transform: translateY(-55%);
+    opacity: 0; /* Définir l'opacité à 1 au début de l'animation */
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(55%);
+    opacity: 1; /* Définir l'opacité à 0 à la fin de l'animation */
+  }
+}
+
+@keyframes span2AnimationReverse {
+  0% {
+    transform: translateY(-55%);
+
+    opacity: 1; /* Définir l'opacité à 0 au début de l'animation */
+  }
+  100% {
+    transform: translateY(55%);
+
+    opacity: 0; /* Définir l'opacité à 1 à la fin de l'animation */
   }
 }
