@@ -13,7 +13,7 @@ export default function Navbar() {
     if (isResponsiveNavOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
     }
   }, [isResponsiveNavOpen]);
   const closeResponsiveNav = () => {
