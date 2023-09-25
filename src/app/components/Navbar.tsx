@@ -5,36 +5,6 @@ import Link from "next/link";
 import "../../style/components/_nav.scss";
 
 export default function Navbar() {
-  // Toggle navbar on scroll
-  // useEffect(() => {
-  //   let lastScroll = 0;
-  //   const nav = document.querySelector("nav");
-  //   const btnBurger = document.getElementById("btn");
-
-  //   if (nav) {
-  //     window.addEventListener("scroll", () => {
-  //       if (btnBurger?.classList.contains("active")) {
-  //         // Ajoutez ici la logique pour gérer le défilement lorsque le bouton burger est actif
-  //       } else {
-  //         if (window.scrollY < lastScroll) {
-  //           nav.style.top = "0"; // Assurez-vous d'ajouter une valeur de chaîne pour 'top'
-  //         } else {
-  //           nav.style.top = "-100px"; // Assurez-vous d'ajouter une valeur de chaîne pour 'top'
-  //         }
-  //       }
-
-  //       lastScroll = window.scrollY;
-  //     });
-  //   }
-  // }, []);
-
-  // //Btn burger
-  // const [isBurgerActive, setIsBurgerActive] = useState(false);
-
-  // const handleBurgerClick = () => {
-  //   setIsBurgerActive(!isBurgerActive);
-  // };
-
   const [isResponsiveNavOpen, setResponsiveNavOpen] = useState(false);
   const toggleResponsiveNav = () => {
     setResponsiveNavOpen(!isResponsiveNavOpen);
@@ -46,6 +16,9 @@ export default function Navbar() {
       document.body.style.overflow = "auto";
     }
   }, [isResponsiveNavOpen]);
+  const closeResponsiveNav = () => {
+    setResponsiveNavOpen(false);
+  };
 
   //FEATURE NAVIGATION HIDE ON SCROLL DOWN
 
@@ -81,40 +54,9 @@ export default function Navbar() {
   }, [scrollPosition]);
   return (
     <>
-      {/* <nav className={isBurgerActive ? "active" : ""}>
-        <div className="nav-container">
-          <Link href="/">
-            <h4>Home</h4>
-          </Link>
-          <ul className={isBurgerActive ? "active" : ""}>
-            <li>
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="/#about">About me</Link>
-            </li>
-            <li>
-              <Link href="/#skills">Skills</Link>
-            </li>
-            <li>
-              <Link href="/#contact">Contact</Link>
-            </li>
-          </ul>
-          <div
-            className={`toggle-btn ${isBurgerActive ? "active" : ""}`}
-            id="btn"
-            onClick={handleBurgerClick}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav> */}
-      {/* // TEST */}
       <nav className={scrollDirection === "down" ? "hide" : "show"}>
         <div className={isResponsiveNavOpen ? "nav-home active" : "nav-home"}>
-          <Link href="/">
+          <Link href="/" onClick={closeResponsiveNav}>
             <h4>Home</h4>
           </Link>
         </div>{" "}
@@ -123,16 +65,24 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link href="/projects" onClick={closeResponsiveNav}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="/#about">About me</Link>
+              <Link href="/#about" onClick={closeResponsiveNav}>
+                About me
+              </Link>
             </li>
             <li>
-              <Link href="/#skills">Skills</Link>
+              <Link href="/#skills" onClick={closeResponsiveNav}>
+                Skills
+              </Link>
             </li>
             <li>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/#contact" onClick={closeResponsiveNav}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

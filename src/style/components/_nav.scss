@@ -118,7 +118,8 @@ nav {
   padding: 10px clamp(30px, 6vw, 60px);
   position: fixed;
   width: 100%;
-  // background: white;
+  backdrop-filter: blur(5px);
+
   transition: transform 0.3s ease;
   top: 0;
   z-index: 1;
@@ -139,8 +140,9 @@ nav {
     align-items: center;
     display: flex;
     z-index: 2;
-    li {
+    h4 {
       transition: 0.2s ease-in-out;
+      font-size: clamp(24px, 3vw, 32px);
     }
     img {
       width: 30px;
@@ -170,13 +172,6 @@ nav {
       &:after {
         transform: scaleX(1);
         transform-origin: bottom left;
-      }
-    }
-  }
-  &.active {
-    a {
-      li {
-        // color: $white;
       }
     }
   }
@@ -231,7 +226,7 @@ nav {
           height: 2.5px;
         }
         li {
-          // color: $white;
+          font-size: clamp(18px, 2vw, 24px);
         }
       }
     }
@@ -244,6 +239,8 @@ nav {
         margin: 0 20px;
         position: relative;
         display: inline-block;
+        font-size: clamp(18px, 2vw, 24px);
+
         &:after {
           content: "";
           position: absolute;
