@@ -1,16 +1,21 @@
 .projects-home {
   .projects-container {
     position: relative;
-    margin: 0 60px;
-    margin-top: clamp(72px, 9vw, 148px);
+    margin: clamp(72px, 9vw, 148px) 60px 0 60px;
     ul {
       display: grid;
       grid-template-columns: 50% 50%;
       justify-items: center;
       row-gap: clamp(40px, 10vw, 100px);
-      @media screen and (max-width: 967px) {
+    }
+    @media screen and (max-width: 967px) {
+      ul {
         grid-template-columns: 100%;
+        li {
+          margin: 0;
+        }
       }
+      margin: clamp(72px, 9vw, 148px) 0 0 0;
     }
     &:after {
       content: url(../../../public/assets/images/svg-deco.svg);

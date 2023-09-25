@@ -1,22 +1,17 @@
 .btn {
   overflow: hidden;
   border-radius: 40px;
-  // border: 0;
-  // border-color: rgba(37, 35, 36, 0.2);
-  // cursor: pointer;
-  // width: -webkit-fit-content;
-  // width: -moz-fit-content;
   width: fit-content;
-  // z-index: 0;
   height: 48px;
   padding-left: 30px;
   padding-right: 30px;
-  // -webkit-box-pack: center;
-  // -ms-flex-pack: center;
-  // -webkit-justify-content: center;
-  // justify-content: center;
+
   background: white;
   color: black;
+  @media screen and (max-width: 640px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   a {
     display: flex;
     flex-direction: column;
