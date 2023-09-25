@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   title: "Portfolio - Clario Cadran",
   description:
     "Dans ce portfolio, découvrez les projets de Clario Cadran, développeur web à Bordeaux. Consultez ses réalisations en matière de développement front-end sur son portfolio et contactez-le pour discuter de vos projets de développement web.",
-  keywords: "développement web, création de sites, internet, portfolio, clario",
+  keywords:
+    "développement web, création de sites, internet, portfolio, clario, Bordeaux",
   openGraph: {
     images: "/assets/images/og-image.png",
   },
