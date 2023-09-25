@@ -67,7 +67,7 @@ export default async function Project({
 
   return (
     <main>
-      <section className="hero">
+      <section className="hero-project">
         <h1>{title}</h1>
         <div className="presentation">
           <h4>

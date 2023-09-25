@@ -1,7 +1,7 @@
 @import "../variables";
 main {
-  overflow-x: hidden;
-  .hero {
+  // overflow-x: hidden;
+  .hero-project {
     padding: 200px 0;
     display: flex;
     align-items: flex-end;
@@ -28,6 +28,16 @@ main {
       }
       @media screen and (max-width: 757px) {
         margin-bottom: 40px;
+      }
+      &:after {
+        content: url(../../../public/assets/images/svg-deco.svg);
+        position: absolute;
+        left: -300px;
+        top: 100px;
+        z-index: -2;
+        @media screen and (max-width: 640px) {
+          content: "";
+        }
       }
     }
     .presentation {
