@@ -28,7 +28,11 @@ export function generateMetadata({
   }
 
   return {
-    title: project.title,
+    title: project.title + " - Clario Cadran",
+    description: project.shortDescription,
+    openGraph: {
+      images: project.mainImg,
+    },
   };
 }
 
