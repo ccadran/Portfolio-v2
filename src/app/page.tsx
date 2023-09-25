@@ -14,7 +14,7 @@ export default function Home() {
           Clario <br />
           Cadran
         </h1>
-        <h3>Web devloper</h3>
+        <h3>Web developer</h3>
       </section>
       <section className="about-me" id="about">
         <h2>About me</h2>
