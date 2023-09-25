@@ -4,7 +4,6 @@ import "../../style/components/_projectHome.scss";
 
 export default function ProjectHome() {
   const projects = getSortedProjectData();
-  console.log(projects);
 
   return (
     <div className="projects-container">

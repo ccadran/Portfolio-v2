@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import "../../style/components/_button.scss";
 
 export default function Button({
   link,
@@ -17,7 +18,8 @@ export default function Button({
         target={newTab ? "_blank" : undefined}
         rel={newTab ? "noopener" : undefined}
       >
-        {text}
+        <span>{text}</span>
+        <span>{text}</span>
       </Link>
     </button>
   );

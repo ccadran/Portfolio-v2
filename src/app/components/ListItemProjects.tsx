@@ -28,10 +28,11 @@ export default function ListItemProjects({ project }: Props) {
     if (projectElement) {
       // Initialisez VanillaTilt avec l'élément .project
       VanillaTilt.init(projectElement, {
-        max: 5,
+        max: 10,
         speed: 10,
         glare: false,
         "max-glare": 20,
+        perspective: 1000,
       });
     }
   }, []);
@@ -57,6 +58,6 @@ export default function ListItemProjects({ project }: Props) {
         </div>
       </div>
     </div>
-    // </Link>
+    // {/* </Link> */}
   );
 }

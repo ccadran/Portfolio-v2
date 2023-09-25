@@ -63,7 +63,6 @@ export default async function Project({
   } = await getProjectData(projectId);
 
   const logosImgs = await getLogosImgs(tools.logos);
-  console.log(logosImgs);
 
   return (
     <main>

@@ -1,0 +1,85 @@
+.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 60px;
+  border: 0;
+  border-color: rgba(37, 35, 36, 0.2);
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 0;
+  height: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  a {
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      // animation: btnHover1 0.5s ease-in-out forwards;
+
+      span:nth-child(1) {
+        animation: span1Animation 0.5s ease-in-out forwards;
+      }
+      span:nth-child(2) {
+        animation: span2Animation 0.5s ease-in-out 0.2s forwards;
+      }
+    }
+    span {
+      transform: translateY(55%);
+      opacity: 1; /* Définir l'opacité à 1 par défaut */
+      &:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// @keyframes btnHover1 {
+//   0% {
+//     /* Pas besoin de changer l'opacité ici */
+//   }
+//   100% {
+//   }
+// }
+
+@keyframes span1Animation {
+  0% {
+    transform: translateY(55%);
+    opacity: 1; /* Définir l'opacité à 1 au début de l'animation */
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-55%);
+    opacity: 0; /* Définir l'opacité à 0 à la fin de l'animation */
+  }
+}
+
+@keyframes span2Animation {
+  0% {
+    transform: translateY(55%);
+
+    opacity: 0; /* Définir l'opacité à 0 au début de l'animation */
+  }
+  100% {
+    transform: translateY(-55%);
+
+    opacity: 1; /* Définir l'opacité à 1 à la fin de l'animation */
+  }
+}

@@ -3,7 +3,6 @@ import ListItemProjects from "./ListItemProjects";
 import "../../style/components/_projectProjects.scss";
 
 const projects = getSortedProjectData();
-console.log(projects);
 
 export default function ProjectProjects() {
   return (
