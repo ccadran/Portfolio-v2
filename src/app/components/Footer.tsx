@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "../../style/components/_footer.scss";
+import ButtonBlack from "./ButtonBlack";
 
 export default function Footer() {
   return (
@@ -57,9 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="under-footer">
-        <button id="legal">
-          <a href="./mentions legales/mentions.html">Mentions légales</a>
-        </button>
+        <ButtonBlack link="/legal" text="Mentions légales" newTab={false} />
         <p>Copyright © 2023. Tous droits réservés.</p>
       </div>
     </footer>

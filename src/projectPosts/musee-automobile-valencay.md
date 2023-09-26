@@ -1,5 +1,5 @@
 ---
-title: "Musée automobile de Valencay"
+title: "Musée de Valencay"
 projectType: "Website"
 technologies: "Html-Scss"
 date: "19-10-2022"
