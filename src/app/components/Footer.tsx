@@ -58,7 +58,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="under-footer">
-        <ButtonBlack link="/legal" text="Mentions légales" newTab={false} />
+        <ButtonBlack
+          link="/mentions-legales"
+          text="Mentions légales"
+          newTab={false}
+        />
         <p>Copyright © 2023. Tous droits réservés.</p>
       </div>
     </footer>
