@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 type Props = {
   project: Project;
 };
@@ -20,9 +21,23 @@ export default function ListItem({ project }: Props) {
         <div className="img-container">
           <img src={mainImg} alt="" />
         </div>
-        <p>
-          {projectType} * {technologies} * {date.slice(6, 10)}
-        </p>
+        <div className="description">
+          <p>
+            {projectType} * {technologies} * {date.slice(6, 10)}
+          </p>
+          <div className="arrows">
+            <img
+              src="/assets/logos/arrowBlack.svg"
+              alt="arrow icon"
+              className="arrow"
+            />
+            <img
+              src="/assets/logos/arrowBlack.svg"
+              alt="arrow icon"
+              className="arrow"
+            />
+          </div>
+        </div>
       </Link>
     </li>
   );
