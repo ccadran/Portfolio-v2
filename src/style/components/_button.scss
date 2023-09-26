@@ -54,7 +54,7 @@
 
 @keyframes span1Animation {
   0% {
-    transform: translateY(55%);
+    transform: translateY(50%);
     opacity: 1; /* Définir l'opacité à 1 au début de l'animation */
   }
 
@@ -71,7 +71,7 @@
     opacity: 0; /* Définir l'opacité à 0 au début de l'animation */
   }
   100% {
-    transform: translateY(-55%);
+    transform: translateY(-50%);
 
     opacity: 1; /* Définir l'opacité à 1 à la fin de l'animation */
   }
@@ -85,14 +85,14 @@
     opacity: 0.8;
   }
   100% {
-    transform: translateY(55%);
+    transform: translateY(50%);
     opacity: 1; /* Définir l'opacité à 0 à la fin de l'animation */
   }
 }
 
 @keyframes span2AnimationReverse {
   0% {
-    transform: translateY(-55%);
+    transform: translateY(-50%);
 
     opacity: 1; /* Définir l'opacité à 0 au début de l'animation */
   }
