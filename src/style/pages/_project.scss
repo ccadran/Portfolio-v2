@@ -4,11 +4,11 @@ main {
   .hero-project {
     padding: 200px 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     max-width: 1600px;
     margin: 0 auto;
-    @media screen and (max-width: 757px) {
+    @media screen and (max-width: 1180px) {
       flex-direction: column;
       align-items: start;
       padding: 100px 0;
@@ -41,14 +41,11 @@ main {
       }
     }
     .presentation {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-direction: column;
-      @media screen and (max-width: 1023px) {
-        margin-left: auto;
-        width: 60%;
-      }
-      @media screen and (max-width: 707px) {
+
+      @media screen and (max-width: 1180px) {
         margin-left: 0;
         width: 100%;
         margin-top: 30px;
@@ -62,7 +59,7 @@ main {
       }
       p {
         font-size: 20px;
-        margin: 50px 0;
+        margin: 30px 0 50px 0;
       }
       .view-project {
         width: 150px;
