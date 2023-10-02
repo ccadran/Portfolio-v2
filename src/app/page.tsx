@@ -27,7 +27,6 @@ export default function Home() {
       </section>
       <section className="about-me" id="about">
         <h2>About me</h2>
-        <img src="/assets/logos/arrow.svg" alt="" />
         <div className="about-me__container">
           <div className="img-container">
             <img src="/assets/images/about.jpg" alt="" />
