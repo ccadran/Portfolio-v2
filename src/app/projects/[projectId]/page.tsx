@@ -86,7 +86,7 @@ export default async function Project({
         </div>
         <div className="img-project">
           {illustrationsImgs.map((illustrationImg) => (
-            <div className="img-container">
+            <div className="img-container" key={illustrationImg}>
               <img src={illustrationImg} alt="" />
             </div>
           ))}
@@ -97,7 +97,7 @@ export default async function Project({
         <div className="tools-container">
           <ul>
             {logosImgs.map((logoImg) => (
-              <li>
+              <li key={logoImg}>
                 <img src={logoImg} alt="" width="50px" height="50px" />
               </li>
             ))}

@@ -20,9 +20,8 @@ export default function ListItemProjects({ project }: Props) {
     technologies,
   } = project;
 
-  // Sélectionnez l'élément .project
   useEffect(() => {
-    const projectElement = document.querySelectorAll(".project");
+    const projectElement = document.querySelector(".project") as HTMLElement;
 
     // Vérifiez si l'élément existe avant d'initialiser VanillaTilt
     if (projectElement) {
