@@ -75,11 +75,6 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/#skills" onClick={closeResponsiveNav}>
-                Skills
-              </Link>
-            </li>
-            <li>
               <Link href="/#contact" onClick={closeResponsiveNav}>
                 Contact
               </Link>
