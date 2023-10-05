@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Button from "./Button";
 import Link from "next/link";
 import VanillaTilt from "vanilla-tilt";
@@ -20,12 +20,12 @@ export default function ListItemProjects({ project }: Props) {
     technologies,
   } = project;
 
-  useEffect(() => {
-    const projectElement = document.querySelector(".project") as HTMLElement;
+  const projectRef = useRef(null);
 
-    // Vérifiez si l'élément existe avant d'initialiser VanillaTilt
+  useEffect(() => {
+    const projectElement = projectRef.current;
+
     if (projectElement) {
-      // Initialisez VanillaTilt avec l'élément .project
       VanillaTilt.init(projectElement, {
         max: 10,
         speed: 10,
@@ -38,7 +38,7 @@ export default function ListItemProjects({ project }: Props) {
 
   return (
     // <Link href={`/projects/${id}`}>
-    <div className="project">
+    <div className="project" ref={projectRef}>
       <h3>{title}</h3>
       <div className="content">
         <div className="img-container">
