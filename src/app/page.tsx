@@ -69,7 +69,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/logos/linkedin-white.svg" alt="" />
+              <img src="/assets/logos/Linkedin-white.svg" alt="" />
             </Link>
             <Link
               href="https://www.instagram.com/clario_cdrn/"

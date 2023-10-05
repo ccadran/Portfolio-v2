@@ -28,7 +28,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/linkedin-black.svg" alt="" />
+                <img src="/assets/logos/Linkedin-black.svg" alt="" />
               </Link>
               <Link
                 href="https://www.instagram.com/clario_cdrn/"
