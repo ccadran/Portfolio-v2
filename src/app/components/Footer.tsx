@@ -42,7 +42,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Github-black.svg" alt="" />
+                <img src="/assets/logos/github-black.svg" alt="" />
               </Link>
             </ul>
           </div>
