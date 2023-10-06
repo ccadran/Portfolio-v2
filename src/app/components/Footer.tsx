@@ -35,7 +35,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Github-black.svg" alt="" />
+                <img src="/assets/Github-black.svg" alt="" />
               </Link>
               <Link
                 href="https://www.instagram.com/clario_cdrn/"
