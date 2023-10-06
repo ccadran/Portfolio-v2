@@ -38,12 +38,19 @@ export default function Footer() {
                 <img src="/assets/logos/Instagram-black.svg" alt="" />
               </Link>
               <Link
-                href="https://github.com/ccadran"
+                href="https://www.instagram.com/clario_cdrn/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/assets/logos/github-black.svg" alt="" />
               </Link>
+              {/* <Link
+                href="https://github.com/ccadran"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/assets/logos/github-black.svg" alt="" />
+              </Link> */}
             </ul>
           </div>
         </div>
