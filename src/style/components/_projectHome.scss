@@ -109,7 +109,7 @@
         .img-container {
           opacity: 1;
           img {
-            animation: imgScale 0.2s ease-in-out forwards;
+            animation: imgScale 0.3s ease-in-out forwards;
           }
         }
         .description {
@@ -132,7 +132,7 @@
       &:not(:hover) {
         .img-container {
           img {
-            animation: imgScaleReverse 0.2s ease-in-out forwards;
+            animation: imgScaleReverse 0.3s ease-in-out forwards;
           }
         }
         .description {
@@ -190,12 +190,12 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 @keyframes imgScaleReverse {
   0% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);
