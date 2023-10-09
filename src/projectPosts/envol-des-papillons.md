@@ -1,7 +1,7 @@
 ---
 title: "L'envol des papillons"
 projectType: "website"
-technologies: "React-Scss-NodeJs-MongoDB-Figma"
+technologies: "React-NodeJs-MongoDB-Figma"
 date: "23-06-2023"
 shortDescription: "Mon premier projet freelance de grande envergure, la refonte complète du site d’une école Montessori.
 Il comprend une partie vitrine qui présente l’établissement, ainsi qu’un Blog, mais également un espace parent pour y publier des informations qui leur seront seulement accessibles.
