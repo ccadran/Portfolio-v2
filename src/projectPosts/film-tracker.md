@@ -9,7 +9,7 @@ On peut également ajouter un film dans nos favoris pour facilement les retrouve
 url: "https://film-tracker.netlify.app/"
 mainImg: "/assets/images/film/cover.png"
 illustrationsImgs: ["/assets/images/film/illustration-1.png", "/assets/images/film/illustration-2.png", "/assets/images/film/illustration-3.png"]
-longDescription: "Ce projet réalisé en React m’a permis de valider beaucoup de concept du framework.
+longDescription: "Ce projet réalisé en React m’a permis de valider beaucoup de concept du framework. 
 
 Le site permet de trouver rapidement un film à partir de son nom grâce a l’appel a une API, les résultats s’affichent ensuite dans des « card ». L’ensemble des résultats peuvent être par la suite trier de façon croissante ou décroissant par rapport à leurs notes.
 
