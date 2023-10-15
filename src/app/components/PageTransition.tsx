@@ -14,25 +14,28 @@ const PageTransition = ({ title }: { title: string }) => {
   useEffect(() => {
     if (animationComplete) {
       // À la fin de l'animation, changez le style pour display: none
-      const pageTransitionDiv = document.querySelector(".page-transition");
+      const pageTransitionDiv = document.querySelector(
+        ".page-transition"
+      ) as HTMLElement;
       if (pageTransitionDiv) {
         pageTransitionDiv.style.display = "none";
       }
     }
   }, [animationComplete]);
-  const [mouseY, setMouseY] = useState("50%");
-  const [mouseX, setMouseX] = useState("50%");
 
-  useEffect(() => {
-    const handleMouseMove = (e: any) => {
-      setMouseY(e.clientY);
-      setMouseX(e.clientX);
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  // const [mouseY, setMouseY] = useState("50%");
+  // const [mouseX, setMouseX] = useState("50%");
+
+  // useEffect(() => {
+  //   const handleMouseMove = (e: any) => {
+  //     setMouseY(e.clientY);
+  //     setMouseX(e.clientX);
+  //   };
+  //   window.addEventListener("mousemove", handleMouseMove);
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
 
   return (
     <motion.div
