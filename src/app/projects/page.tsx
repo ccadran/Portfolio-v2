@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ProjectProjects from "../components/ProjectProjects";
 import "../../style/pages/_projects.scss";
+import PageTransition from "../components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Projets - Clario Cadran",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main>
+      <PageTransition title="Projects"></PageTransition>
       <section className="hero">
         <h1>Projects</h1>
         <p>

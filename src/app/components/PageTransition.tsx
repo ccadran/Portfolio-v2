@@ -11,7 +11,6 @@ const PageTransition = ({ title }: { title: string }) => {
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
-
   useEffect(() => {
     if (animationComplete) {
       // À la fin de l'animation, changez le style pour display: none
@@ -21,23 +20,46 @@ const PageTransition = ({ title }: { title: string }) => {
       }
     }
   }, [animationComplete]);
+  const [mouseY, setMouseY] = useState("50%");
+  const [mouseX, setMouseX] = useState("50%");
 
-  const mouseY = useMotionValue(0);
-
-  const mousePosition = (e: any) => {
-    mouseY.set(e.clientY);
-  };
+  useEffect(() => {
+    const handleMouseMove = (e: any) => {
+      setMouseY(e.clientY);
+      setMouseX(e.clientX);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <motion.div
       className="page-transition"
       initial={{ opacity: 1 }}
-      animate={{ opacity: 0, height: "50px", width: "50px", top: mouseY }}
+      animate={{
+        opacity: 0,
+      }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 3, onComplete: handleAnimationComplete }}
-      onMouseMove={mousePosition}
+      transition={{
+        duration: 0.5,
+        ease: "easeIn",
+        delay: 0.4,
+        onComplete: handleAnimationComplete,
+      }}
     >
-      <h1 className="page-transition-title">{title}</h1>
+      <motion.h1
+        className="page-transition-title"
+        initial={{ opacity: 1, display: "block" }}
+        animate={{
+          opacity: 0,
+        }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.4, ease: "easeIn", delay: 0.4 }}
+      >
+        {title}
+      </motion.h1>
     </motion.div>
   );
 };

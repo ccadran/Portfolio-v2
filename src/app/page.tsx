@@ -4,6 +4,7 @@ import ProjectHome from "./components/ProjectHome";
 import "../style/pages/_home.scss";
 import Link from "next/link";
 import { Metadata } from "next";
+import PageTransition from "./components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Portfolio - Clario Cadran",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <PageTransition title="Clario Cadran"></PageTransition>
       <section className="hero">
         <h1>
           Clario <br />
