@@ -14,9 +14,10 @@ body {
     margin-top: clamp(100px, 26vw, 260px);
   }
   .hero,
-  main {
+  main:not(.page-transition) {
     padding: 0 clamp(30px, 6vw, 60px);
   }
+
   main {
     max-width: 1600px;
     margin: 0 auto;

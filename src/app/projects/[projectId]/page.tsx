@@ -66,49 +66,48 @@ export default async function Project({
   const logosImgs = await getLogosImgs(tools.logos);
 
   return (
-    <PageTransition>
-      <main>
-        <section className="hero-project">
-          <h1>{title}</h1>
-          <div className="presentation">
-            <h4>
-              {projectType} * {technologies} * {date.slice(6, 10)}
-            </h4>
-            <p>{shortDescription}</p>
-            <Button link={url} text="Voir le projet" newTab={true} />
-          </div>
-        </section>
-        <div className="cover">
-          <img src={mainImg} alt="" />
+    <main>
+      <PageTransition title={title}></PageTransition>
+      <section className="hero-project">
+        <h1>{title}</h1>
+        <div className="presentation">
+          <h4>
+            {projectType} * {technologies} * {date.slice(6, 10)}
+          </h4>
+          <p>{shortDescription}</p>
+          <Button link={url} text="Voir le projet" newTab={true} />
         </div>
-        <section className="project-description">
-          <div className="txt-project">
-            <h4>{title}</h4>
-            <p>{longDescription}</p>
-          </div>
-          <div className="img-project">
-            {illustrationsImgs.map((illustrationImg) => (
-              <div className="img-container" key={illustrationImg}>
-                <img src={illustrationImg} alt="" />
-              </div>
+      </section>
+      <div className="cover">
+        <img src={mainImg} alt="" />
+      </div>
+      <section className="project-description">
+        <div className="txt-project">
+          <h4>{title}</h4>
+          <p>{longDescription}</p>
+        </div>
+        <div className="img-project">
+          {illustrationsImgs.map((illustrationImg) => (
+            <div className="img-container" key={illustrationImg}>
+              <img src={illustrationImg} alt="" />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="tools">
+        <h2>Tools</h2>
+        <div className="tools-container">
+          <ul>
+            {logosImgs.map((logoImg) => (
+              <li key={logoImg}>
+                <img src={logoImg} alt="" width="50px" height="50px" />
+              </li>
             ))}
-          </div>
-        </section>
-        <section className="tools">
-          <h2>Tools</h2>
-          <div className="tools-container">
-            <ul>
-              {logosImgs.map((logoImg) => (
-                <li key={logoImg}>
-                  <img src={logoImg} alt="" width="50px" height="50px" />
-                </li>
-              ))}
-            </ul>
-            <p>{tools.toolsDescription}</p>
-            <Button link={tools.urlGithub} text="Voir le code" newTab={true} />
-          </div>
-        </section>
-      </main>
-    </PageTransition>
+          </ul>
+          <p>{tools.toolsDescription}</p>
+          <Button link={tools.urlGithub} text="Voir le code" newTab={true} />
+        </div>
+      </section>
+    </main>
   );
 }
