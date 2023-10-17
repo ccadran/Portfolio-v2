@@ -5,6 +5,7 @@ import "../style/pages/_home.scss";
 import Link from "next/link";
 import { Metadata } from "next";
 import PageTransition from "./components/PageTransition";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: "Portfolio - Clario Cadran",
@@ -21,7 +22,7 @@ export default function Home() {
     <main>
       <PageTransition title="Clario Cadran"></PageTransition>
       <section className="hero">
-        <h1>
+        <h1 data-scroll data-scroll-speed="0.3">
           Clario <br />
           Cadran
         </h1>
