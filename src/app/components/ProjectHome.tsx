@@ -16,7 +16,11 @@ export default function ProjectHome() {
         ))}
       </ul>
       <div className="btn-container">
-        <Button text="View All Projects" link="/projects" newTab={false} />
+        <Button
+          text="Voir tous les projets !"
+          link="/projects"
+          newTab={false}
+        />
       </div>
     </div>
   );
