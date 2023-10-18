@@ -33,20 +33,13 @@ export function getSortedProjectData() {
         toolsDescription: matterResult.data.tools.toolsDescription,
         urlGithub: matterResult.data.tools.urlGithub,
       },
+      order: matterResult.data.order,
     };
 
     return project;
   });
   return allProjectsData.sort((a, b) => {
-    if (a.date.slice(6, 10) === b.date.slice(6, 10)) {
-      if (a.date.slice(3, 5) === b.date.slice(3, 5)) {
-        return a.date.slice(0, 2) < b.date.slice(0, 2) ? 1 : -1;
-      } else {
-        return a.date.slice(3, 5) < b.date.slice(3, 5) ? 1 : -1;
-      }
-    } else {
-      return a.date.slice(6, 10) < b.date.slice(6, 10) ? 1 : -1;
-    }
+    return a.order < b.order ? -1 : 1;
   });
 }
 
@@ -79,6 +72,7 @@ export async function getProjectData(id: string) {
       toolsDescription: matterResult.data.tools.toolsDescription,
       urlGithub: matterResult.data.tools.urlGithub,
     },
+    order: matterResult.data.order,
     contentHtml,
   };
 

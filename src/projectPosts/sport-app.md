@@ -19,4 +19,7 @@ tools:
   toolsDescription: "Style fait avec du CSS simple.
 Le projet se concentrait ici sur la mise en pratique de la programmation orientée objet sur Javascript."
   urlGithub: "https://github.com/ccadran/sports-app"
+
+order: 6
+
 ---

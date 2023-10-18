@@ -14,4 +14,5 @@ type Project = {
     toolsDescription: string;
     urlGithub: string;
   };
+  order: number;
 };

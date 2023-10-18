@@ -19,4 +19,7 @@ tools:
   toolsDescription: "Utilisation de Scss pour tout le style hormis le comportement de la navbar qui possède un petit script Javascript se jouant lors du scroll.
 Avec du recul certaines choses auraient été plus facilement réalisables en Js mais à ce moment-là je ne le maitrisais pas encore parfaitement, et utiliser du CSS pour ces animations m’a permis d’apprendre pas mal de choses."
   urlGithub: "https://github.com/ccadran/musee-automobile"
+
+order: 7
+
 ---
