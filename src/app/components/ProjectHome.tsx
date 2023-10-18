@@ -1,6 +1,7 @@
 import { getSortedProjectData } from "@/lib/projects";
 import ListItemHome from "./ListItemHome";
 import "../../style/components/_projectHome.scss";
+import Button from "./Button";
 
 export default function ProjectHome() {
   const projects = getSortedProjectData();
@@ -14,6 +15,9 @@ export default function ProjectHome() {
           <ListItemHome key={project.id} project={project} />
         ))}
       </ul>
+      <div className="btn-container">
+        <Button text="View All Projects" link="/projects" newTab={false} />
+      </div>
     </div>
   );
 }

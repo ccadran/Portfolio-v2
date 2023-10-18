@@ -1,7 +1,7 @@
 ---
 title: "Réseaux sociaux"
 projectType: "Communication"
-technologies: "Prmier Pro-After Effect-Photoshop"
+technologies: "Suite Adobe-Réseaux sociaux"
 date: "23-01-2023"
 shortDescription: "Ma présence sur internet avec Youtube, TikTok et Instagram.
 Ces derniers mois, j'ai décidé de commencer à créer du contenu en rapport avec le développement web, sous forme de différentes séries de vidéos.

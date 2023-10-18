@@ -150,6 +150,11 @@
       }
     }
   }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(40px, 8vw, 80px);
+  }
 }
 
 @keyframes arrowHover1 {
