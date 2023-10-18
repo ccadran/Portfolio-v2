@@ -5,7 +5,6 @@ import "../../style/components/_projectHome.scss";
 export default function ProjectHome() {
   const projects = getSortedProjectData();
 
-  // Filtrer les projets avec project.order < 4
   const filteredProjects = projects.filter((project) => project.order <= 4);
 
   return (
