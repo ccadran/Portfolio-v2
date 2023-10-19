@@ -13,11 +13,11 @@ const anim: AnimationVariants = {
   },
   open: (i: number) => ({
     opacity: 0,
-    transition: { duration: 0, delay: 0.1 * i },
+    transition: { duration: 0, delay: 0.3 * i },
   }),
   closed: (i: number) => ({
     opacity: 1,
-    transition: { duration: 0, delay: 0.1 * i },
+    transition: { duration: 0, delay: 0.3 * i },
   }),
 };
 
