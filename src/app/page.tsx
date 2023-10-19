@@ -40,7 +40,7 @@ export default function Home() {
             Je suis Clario Cadran, passionné par le développement web dans son
             ensemble et pour l’instant plus orienté sur le front-end. <br />
             <br />
-            Je suis actuellement Étudiant en première année du BUT MMI (Métiers
+            Je suis actuellement Étudiant en deuxième année du BUT MMI (Métiers
             du Multimédia et de l’Internet) à Bordeaux.
             <br />
             <br />

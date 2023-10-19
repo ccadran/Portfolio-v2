@@ -19,8 +19,8 @@ export default function ProjectsPage() {
       <section className="hero">
         <h1>Projects</h1>
         <p>
-          L'ensnemble de mes projets réalisés lors de ma formation où lors de
-          mon temps personnel.
+          L'ensemble de mes projets réalisés lors de ma formation où lors de mon
+          temps personnel.
         </p>
       </section>
       <ProjectProjects />
