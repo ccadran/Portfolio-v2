@@ -43,23 +43,25 @@ export default function Index({ title }: { title: string }) {
   };
 
   const getBlocks = () => {
-    const { innerWidth, innerHeight } = window;
-    const blockSize = innerWidth * 0.05;
-    const nbOfBlocks = Math.ceil(innerHeight / blockSize);
-    const delays = shuffle([...Array(nbOfBlocks)].map((_, i) => i));
-    return delays.map((randomDelay, i) => {
-      return (
-        <motion.div
-          className="block"
-          variants={anim}
-          initial="initial"
-          animate="open"
-          exit="closed"
-          custom={randomDelay}
-          key={i}
-        ></motion.div>
-      );
-    });
+    if (typeof window !== "undefined") {
+      const { innerWidth, innerHeight } = window;
+      const blockSize = innerWidth * 0.05;
+      const nbOfBlocks = Math.ceil(innerHeight / blockSize);
+      const delays = shuffle([...Array(nbOfBlocks)].map((_, i) => i));
+      return delays.map((randomDelay, i) => {
+        return (
+          <motion.div
+            className="block"
+            variants={anim}
+            initial="initial"
+            animate="open"
+            exit="closed"
+            custom={randomDelay}
+            key={i}
+          ></motion.div>
+        );
+      });
+    }
   };
 
   return (
