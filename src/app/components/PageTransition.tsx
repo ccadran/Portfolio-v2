@@ -9,18 +9,19 @@ type AnimationVariants = Variants;
 const anim: AnimationVariants = {
   initial: {
     opacity: 1,
+    transition: { delay: 1 }, // Ajouter un délai d'1 seconde
   },
   open: (i: number) => ({
     opacity: 0,
-    transition: { duration: 0, delay: 0.05 * i },
+    transition: { duration: 0, delay: 0.1 * i },
   }),
   closed: (i: number) => ({
     opacity: 1,
-    transition: { duration: 0, delay: 0.05 * i },
+    transition: { duration: 0, delay: 0.1 * i },
   }),
 };
 
-export default function Index({ title }) {
+export default function Index({ title }: { title: string }) {
   const handleAnimationComplete = () => {
     const pixelBackground = document.querySelector(
       ".pixelBackground"
@@ -71,7 +72,6 @@ export default function Index({ title }) {
       transition={{
         duration: 0.5,
         ease: "easeIn",
-        delay: 4,
       }}
       onAnimationComplete={handleAnimationComplete}
       className="pixelBackground"
@@ -83,7 +83,7 @@ export default function Index({ title }) {
           </div>
         );
       })}
-      <h1 className="title">{title}</h1>
+      {/* <h1 className="title">{title}</h1> */}
     </motion.div>
   );
 }
