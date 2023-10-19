@@ -58,46 +58,23 @@
 import React, { useState, useEffect } from "react";
 import "../../style/components/_pageTransition.scss";
 import { motion } from "framer-motion";
-import { log } from "console";
 
 const anim = {
   initial: {
-    opacity: 0,
+    opacity: 1,
   },
   open: (i) => ({
-    opacity: 1,
-    transition: { duration: 0, delay: 0.03 * i },
+    opacity: 0,
+    transition: { duration: 0, delay: 0.05 * i },
   }),
   closed: (i) => ({
-    opacity: 0,
-    transition: { duration: 0, delay: 0.03 * i },
+    opacity: 1,
+    transition: { duration: 0, delay: 0.05 * i },
   }),
 };
 
-export default function index({ menuIsActive }) {
-  // const [animationComplete, setAnimationComplete] = useState(false);
-
-  // const handleAnimationComplete = () => {
-  //   console.log("animation complete");
-
-  //   setAnimationComplete(true);
-  // };
-  // useEffect(() => {
-  //   if (animationComplete) {
-  //     // À la fin de l'animation, changez le style pour display: none
-  //     const pageTransitionDiv = document.querySelector(
-  //       ".pixelBackgound"
-  //     ) as HTMLElement;
-  //     if (pageTransitionDiv) {
-  //       pageTransitionDiv.style.display = "none";
-  //     }
-  //   }
-  // }, [animationComplete]);
-
+export default function index({}) {
   const handleAnimationComplete = () => {
-    console.log("test");
-
-    // À la fin de l'animation, remettre display à "none"
     const pixelBackground = document.querySelector(
       ".pixelBackground"
     ) as HTMLElement;
@@ -105,41 +82,35 @@ export default function index({ menuIsActive }) {
       pixelBackground.style.display = "none";
     }
   };
-  /**
-   * Shuffles array in place (Fisher–Yates shuffle).
-   * @param {Array} a items An array containing the items.
-   */
-  // const shuffle = (a) => {
-  //   var j, x, i;
-  //   for (i = a.length - 1; i > 0; i--) {
-  //     j = Math.floor(Math.random() * (i + 1));
-  //     x = a[i];
-  //     a[i] = a[j];
-  //     a[j] = x;
-  //   }
-  //   return a;
-  // };
+
+  const shuffle = (a) => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
+  };
 
   const getBlocks = () => {
     const { innerWidth, innerHeight } = window;
     const blockSize = innerWidth * 0.05;
     const nbOfBlocks = Math.ceil(innerHeight / blockSize);
-    return [...Array(nbOfBlocks)].map((_, i) => {
-      return <div className="block"></div>;
+    const delays = shuffle([...Array(nbOfBlocks)].map((_, i) => i));
+    return delays.map((randomDelay, i) => {
+      return (
+        <motion.div
+          className="block"
+          variants={anim}
+          initial="initial"
+          animate="open"
+          exit="closed"
+          custom={randomDelay}
+        ></motion.div>
+      );
     });
-    // const shuffledIndexes = shuffle([...Array(nbOfBlocks)].map((_, i) => i));
-    // return shuffledIndexes.map((randomIndex, index) => {
-    //   return (
-    //     <motion.div
-    //       key={index}
-    //       className="block"
-    //       variants={anim}
-    //       initial="initial"
-    //       animate={menuIsActive ? "open" : "closed"}
-    //       custom={randomIndex}
-    //     />
-    //   );
-    // });
   };
 
   return (
@@ -163,27 +134,3 @@ export default function index({ menuIsActive }) {
     </motion.div>
   );
 }
-
-// <motion.div
-//   initial={{ opacity: 1 }}
-//   animate={{
-//     opacity: 0,
-//     display: "block",
-//   }}
-//   exit={{ opacity: 1 }}
-//   transition={{
-//     duration: 0.5,
-//     ease: "easeIn",
-//     delay: 0.4,
-//   }}
-//   className="pixelBackground"
-//   onAnimationComplete={handleAnimationComplete}
-// >
-//   {[...Array(20)].map((_, index) => {
-//     return (
-//       <div key={index} className="column">
-//         {getBlocks()}
-//       </div>
-//     );
-//   })}
-// </motion.div>
