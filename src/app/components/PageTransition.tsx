@@ -1,89 +1,36 @@
-// PageTransition.js
 "use client";
 
-// import { useEffect, useState } from "react";
-// import { motion, useMotionValue } from "framer-motion";
-// import "../../style/components/_pageTransition.scss";
-
-// const PageTransition = ({ title }: { title: string }) => {
-//   const [animationComplete, setAnimationComplete] = useState(false);
-
-//   const handleAnimationComplete = () => {
-//     setAnimationComplete(true);
-//   };
-//   useEffect(() => {
-//     if (animationComplete) {
-//       // À la fin de l'animation, changez le style pour display: none
-//       const pageTransitionDiv = document.querySelector(
-//         ".page-transition"
-//       ) as HTMLElement;
-//       if (pageTransitionDiv) {
-//         pageTransitionDiv.style.display = "none";
-//       }
-//     }
-//   }, [animationComplete]);
-
-//   return (
-//     <motion.div
-//       className="page-transition"
-//       initial={{ opacity: 1 }}
-//       animate={{
-//         opacity: 0,
-//       }}
-//       exit={{ opacity: 1 }}
-//       transition={{
-//         duration: 0.5,
-//         ease: "easeIn",
-//         delay: 0.4,
-//         onComplete: handleAnimationComplete,
-//       }}
-//     >
-//       <motion.h1
-//         className="page-transition-title"
-//         initial={{ opacity: 1, display: "block" }}
-//         animate={{
-//           opacity: 0,
-//         }}
-//         exit={{ opacity: 0 }}
-//         transition={{ duration: 0.4, ease: "easeIn", delay: 0.4 }}
-//       >
-//         {title}
-//       </motion.h1>
-//     </motion.div>
-//   );
-// };
-
-// export default PageTransition;
-
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../../style/components/_pageTransition.scss";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const anim = {
+type AnimationVariants = Variants;
+
+const anim: AnimationVariants = {
   initial: {
     opacity: 1,
   },
-  open: (i) => ({
+  open: (i: number) => ({
     opacity: 0,
     transition: { duration: 0, delay: 0.05 * i },
   }),
-  closed: (i) => ({
+  closed: (i: number) => ({
     opacity: 1,
     transition: { duration: 0, delay: 0.05 * i },
   }),
 };
 
-export default function index({}) {
+export default function Index({ title }) {
   const handleAnimationComplete = () => {
     const pixelBackground = document.querySelector(
       ".pixelBackground"
-    ) as HTMLElement;
+    ) as HTMLElement | null;
     if (pixelBackground) {
       pixelBackground.style.display = "none";
     }
   };
 
-  const shuffle = (a) => {
+  const shuffle = (a: number[]) => {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
       j = Math.floor(Math.random() * (i + 1));
@@ -108,6 +55,7 @@ export default function index({}) {
           animate="open"
           exit="closed"
           custom={randomDelay}
+          key={i}
         ></motion.div>
       );
     });
@@ -123,14 +71,19 @@ export default function index({}) {
       transition={{
         duration: 0.5,
         ease: "easeIn",
-        delay: 0.4,
+        delay: 4,
       }}
       onAnimationComplete={handleAnimationComplete}
       className="pixelBackground"
     >
       {[...Array(20)].map((_, i) => {
-        return <div className="column">{getBlocks()}</div>;
+        return (
+          <div className="column" key={i}>
+            {getBlocks()}
+          </div>
+        );
       })}
+      <h1 className="title">{title}</h1>
     </motion.div>
   );
 }
