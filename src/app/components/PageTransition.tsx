@@ -71,7 +71,7 @@ export default function Index({ title }: { title: string }) {
       }}
       exit={{ opacity: 1 }}
       transition={{
-        duration: 1,
+        duration: 1.3,
         ease: "easeInOut",
       }}
       onAnimationComplete={handleAnimationComplete}
