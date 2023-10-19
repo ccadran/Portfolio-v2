@@ -9,15 +9,14 @@ type AnimationVariants = Variants;
 const anim: AnimationVariants = {
   initial: {
     opacity: 1,
-    transition: { delay: 1 }, // Ajouter un délai d'1 seconde
   },
   open: (i: number) => ({
     opacity: 0,
-    transition: { duration: 0, delay: 0.3 * i },
+    transition: { duration: 0, delay: 0.05 * i },
   }),
   closed: (i: number) => ({
     opacity: 1,
-    transition: { duration: 0, delay: 0.3 * i },
+    transition: { duration: 0, delay: 0.05 * i },
   }),
 };
 
@@ -72,8 +71,8 @@ export default function Index({ title }: { title: string }) {
       }}
       exit={{ opacity: 1 }}
       transition={{
-        duration: 0.5,
-        ease: "easeIn",
+        duration: 1,
+        ease: "easeInOut",
       }}
       onAnimationComplete={handleAnimationComplete}
       className="pixelBackground"
