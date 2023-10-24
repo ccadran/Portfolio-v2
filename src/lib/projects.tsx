@@ -74,6 +74,7 @@ export async function getProjectData(id: string) {
       urlGithub: matterResult.data.tools.urlGithub,
     },
     order: matterResult.data.order,
+    note: matterResult.data.note,
     contentHtml,
   };
 
