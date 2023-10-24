@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 import "../style/_settings.scss";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Preloader from "./components/preloader";
+import Preloader from "./components/preloader/Preloader";
 
 export default function RootLayout({
   children,

@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import PageTransition from "./components/PageTransition";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Preloader from "./components/preloader";
+import Preloader from "./components/preloader/Preloader";
 
 export const metadata: Metadata = {
   title: "Portfolio - Clario Cadran",

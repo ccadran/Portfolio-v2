@@ -4,18 +4,18 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { slideUp, opacity } from "./anim";
 import { useEffect, useState } from "react";
-export default function index() {
+export default function Preloader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const words = [
-    "Hello",
-    "Bonjour",
-    "Ciao",
-    "Olà",
-    "やあ",
-    "Hallå",
-    "Guten tag",
-    "Hallo",
+    "Bienvenue",
+    "Welcome",
+    "Bienvenido",
+    "Willkommen",
+    "欢迎",
+    "Benvenuti",
+    "مرحبا",
+    "Bem-vindo",
   ];
   useEffect(() => {
     setDimension({
