@@ -17,5 +17,6 @@ tools:
   urlGithub: "https://github.com/ccadran/MontBlanc-moto-V2"
 
 order: 7
+note : 50
 
 ---

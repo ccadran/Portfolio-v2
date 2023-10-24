@@ -34,12 +34,13 @@ export function getSortedProjectData() {
         urlGithub: matterResult.data.tools.urlGithub,
       },
       order: matterResult.data.order,
+      note: matterResult.data.note,
     };
 
     return project;
   });
   return allProjectsData.sort((a, b) => {
-    return a.order < b.order ? -1 : 1;
+    return a.note > b.note ? -1 : 1;
   });
 }
 

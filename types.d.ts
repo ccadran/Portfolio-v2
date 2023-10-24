@@ -15,4 +15,5 @@ type Project = {
     urlGithub: string;
   };
   order: number;
+  note: number;
 };
