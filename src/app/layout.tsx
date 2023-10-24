@@ -5,7 +5,9 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import "../style/_settings.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "./components/preloader";
 
 export default function RootLayout({
   children,
@@ -18,10 +20,25 @@ export default function RootLayout({
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
   return (
     <html lang="fr">
       <body>
         <Navbar />
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader />}
+        </AnimatePresence>
         {children}
         <Footer />
       </body>

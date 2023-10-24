@@ -84,7 +84,6 @@ export default function Index({ title }: { title: string }) {
           </div>
         );
       })}
-      {/* <h1 className="title">{title}</h1> */}
     </motion.div>
   );
 }

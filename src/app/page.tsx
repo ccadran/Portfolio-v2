@@ -1,3 +1,5 @@
+// "use client";
+
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import ProjectHome from "./components/ProjectHome";
@@ -5,7 +7,9 @@ import "../style/pages/_home.scss";
 import Link from "next/link";
 import { Metadata } from "next";
 import PageTransition from "./components/PageTransition";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "./components/preloader";
 
 export const metadata: Metadata = {
   title: "Portfolio - Clario Cadran",
@@ -18,8 +22,21 @@ export const metadata: Metadata = {
   },
 };
 export default function Home() {
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   (async () => {
+  //     setTimeout(() => {
+  //       setIsLoading(false);
+  //       document.body.style.cursor = "default";
+  //       window.scrollTo(0, 0);
+  //     }, 2000);
+  //   })();
+  // }, []);
   return (
     <main>
+      {/* <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence> */}
       <PageTransition title="Clario Cadran"></PageTransition>
       <section className="hero">
         <h1 data-scroll data-scroll-speed="0.3">
