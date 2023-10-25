@@ -6,8 +6,7 @@ import Button from "./Button";
 export default function ProjectHome() {
   const projects = getSortedProjectData();
 
-  const filteredProjects = projects.filter((project) => project.order <= 4);
-
+  const filteredProjects = projects.slice(0, 4);
   return (
     <div className="projects-container">
       <ul>
