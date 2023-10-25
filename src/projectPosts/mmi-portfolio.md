@@ -17,6 +17,6 @@ tools:
   urlGithub: "https://github.com/ccadran/mmi-portfolio"
 
 order: 5
-note : 56
+note : 50
 
 ---
