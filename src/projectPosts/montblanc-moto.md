@@ -16,7 +16,6 @@ tools:
   toolsDescription: "Utilisation du Scss pour l’ensemble du style et l’animation du logo. Et également de Javascript pour le comportement de la navbar en fonction du scroll et surtout pour ce qui est du menu burger en dessous d’une certaine largeur d’écran."
   urlGithub: "https://github.com/ccadran/MontBlanc-moto-V2"
 
-order: 7
 note : 20
 
 ---

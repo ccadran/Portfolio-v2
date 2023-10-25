@@ -19,7 +19,6 @@ tools:
   toolsDescription: "Utilisation de Premier Pro pour le dérushage et le montage basique et de After Effects pour certaines animations en motion design. Pour les miniatures je me sers généralement de Photoshop."
   urlGithub: "https://www.youtube.com/@Clario_"
 
-order: 4
 
 note : 60
 ---

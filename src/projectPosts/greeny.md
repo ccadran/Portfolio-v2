@@ -19,6 +19,5 @@ tools:
 Ce projet est le premier sur lequel j’ai pu utiliser javascript pour faire autre chose que du style, en utilisant par exemple le client storage pour pouvoir sauvegarder le score utilisateur au changement de page."
   urlGithub: "https://github.com/ccadran/greeny"
 
-order: 8
 note: 10
 ---

@@ -19,6 +19,5 @@ tools:
   toolsDescription: "Utilisation de React pour la réalisation du projet mais également de la librairie framer motion qui m’a permis de créer des animations et d’en randomiser certaines."
   urlGithub: "https://github.com/ccadran/film-tracker"
 
-order: 2
 note: 80
 ---

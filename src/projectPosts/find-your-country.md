@@ -23,7 +23,6 @@ tools:
   toolsDescription: "Utilisation du Scss pour ce qui est du style, mais ce projet se concentre plus sur Javascript avec l’utilisation de l’API « Rest Countries » qui permet d’obtenir plusieurs informations sur l’ensemble des pays du monde. J'ai également approfondi le tri de résultat afin de classer les résultats obtenus en fonction de différents paramètres."
   urlGithub: "https://github.com/ccadran/Find-Your-Country"
 
-order: 3
 note: 70
 
 ---

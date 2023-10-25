@@ -33,7 +33,6 @@ export function getSortedProjectData() {
         toolsDescription: matterResult.data.tools.toolsDescription,
         urlGithub: matterResult.data.tools.urlGithub,
       },
-      order: matterResult.data.order,
       note: matterResult.data.note,
     };
 
@@ -73,7 +72,6 @@ export async function getProjectData(id: string) {
       toolsDescription: matterResult.data.tools.toolsDescription,
       urlGithub: matterResult.data.tools.urlGithub,
     },
-    order: matterResult.data.order,
     note: matterResult.data.note,
     contentHtml,
   };

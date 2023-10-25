@@ -24,6 +24,5 @@ Je pense que j’aurais pu me simplifier la tâche en utilisant un headless CMS 
 L’utilisation de TailwindCSS aurait également simplifier l’architecture de mon projet."
   urlGithub: "https://github.com/ccadran/Photographer-Portfolio"
 
-order: 1
 note: 81
 ---
