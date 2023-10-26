@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z" fill="#000000"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687.15 687.15">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #1e1e1e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <rect class="cls-2" x="442.45" y="146.31" width="89.54" height="326.43"/>
+    <circle class="cls-1" cx="348.24" cy="348.24" r="336.33"/>
+  </g>
+  <g id="Calque_1" data-name="Calque 1">
+    <path class="cls-3" d="m0,343.57C0,153.82,153.82,0,343.57,0s343.57,153.82,343.57,343.57c0,118.51-60,223.01-151.29,284.77L224.78,192.83c-5.79-8.1-16.15-11.54-25.63-8.5-9.48,3.04-15.91,11.86-15.91,21.81v343.57h45.81v-272.1l267.07,373.89c-45.96,22.81-97.75,35.64-152.54,35.64C153.82,687.15,0,533.32,0,343.57Zm458.1,114.52V183.24h45.81v274.86h-45.81Z"/>
+  </g>
 </svg>
