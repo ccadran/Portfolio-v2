@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   p {
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
     font-size: 72px;
     font-weight: bold;
     z-index: 1;
