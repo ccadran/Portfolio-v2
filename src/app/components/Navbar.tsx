@@ -154,6 +154,30 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
+        <div className="nav-links">
+          <ul>
+            {navItems.map((item, index) => {
+              return (
+                <motion.li
+                  key={index}
+                  custom={index}
+                  variants={liSlide}
+                  animate="enter"
+                  exit="exit"
+                  initial="initial"
+                >
+                  <Link
+                    href={item.link}
+                    className={` ${pathname === item.link ? "active" : ""} `}
+                    onClick={closeResponsiveNav}
+                  >
+                    {item.name}
+                  </Link>
+                </motion.li>
+              );
+            })}
+          </ul>
+        </div>
         <div
           className={isResponsiveNavOpen ? "toggle-btn active" : "toggle-btn"}
           onClick={toggleResponsiveNav}
