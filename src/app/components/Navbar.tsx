@@ -14,11 +14,11 @@ const menuSlide = {
   },
   enter: {
     transform: "translateX(0%)",
-    transition: { duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.1 },
+    transition: { duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.05 },
   },
   exit: {
     transform: "translateX(calc(100% + 100px))",
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.1 },
+    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.05 },
   },
 };
 const liSlide = {
@@ -131,11 +131,11 @@ export default function Navbar() {
                   return (
                     <motion.li
                       key={index}
-                      // custom={index}
-                      // variants={liSlide}
-                      // animate="enter"
-                      // exit="exit"
-                      // initial="initial"
+                      custom={index}
+                      variants={liSlide}
+                      animate="enter"
+                      exit="exit"
+                      initial="initial"
                     >
                       <Link
                         href={item.link}
