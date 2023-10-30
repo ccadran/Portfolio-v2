@@ -29,13 +29,13 @@ const liSlide = {
   enter: (i) => ({
     opacity: 1,
     transform: "translateX(0px)",
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.15 * i },
+    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
   }),
   exit: (i) => ({
     opacity: 0,
     transform: "translateX(50px)",
 
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.15 * i },
+    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
   }),
 };
 
