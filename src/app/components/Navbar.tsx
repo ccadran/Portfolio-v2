@@ -82,7 +82,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/#about"
-                className={` ${pathname === "/" ? "active" : ""}`}
+                className={` ${pathname === "/#about" ? "active" : ""}`}
                 onClick={closeResponsiveNav}
               >
                 About me
@@ -91,7 +91,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/#contact"
-                className={` ${pathname === "/" ? "active" : ""}`}
+                className={` ${pathname === "/#contact" ? "active" : ""}`}
                 onClick={closeResponsiveNav}
               >
                 Contact
