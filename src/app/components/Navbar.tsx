@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Curve from "./Curve";
 import "../../style/components/_nav.scss";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,14 +10,14 @@ import { AnimatePresence, motion } from "framer-motion";
 const menuSlide = {
   initial: {
     // x: "calc(100% + 100px)",
-    transform: "translateX(100%)",
+    transform: "translateX(calc(100% + 100px))",
   },
   enter: {
     transform: "translateX(0%)",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
-    transform: "translateX(100%)",
+    transform: "translateX(calc(100% + 100px))",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
 };
@@ -122,6 +123,7 @@ export default function Navbar() {
                   </Link>
                 </li>
               </ul>
+              <Curve />
             </motion.div>
           )}
         </AnimatePresence>
