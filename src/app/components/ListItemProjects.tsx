@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import Button from "./Button";
 import Link from "next/link";
 import VanillaTilt from "vanilla-tilt";
+import { motion } from "framer-motion";
 
 type Props = {
   project: Project;
@@ -25,19 +26,20 @@ export default function ListItemProjects({ project }: Props) {
   useEffect(() => {
     const projectElement = projectRef.current;
 
+    const options = {
+      speed: 1000,
+      max: 10,
+      glare: false,
+      "max-glare": 20,
+      perspective: 1000,
+    };
+
     if (projectElement) {
-      VanillaTilt.init(projectElement, {
-        max: 10,
-        speed: 10,
-        glare: false,
-        "max-glare": 20,
-        perspective: 1000,
-      });
+      VanillaTilt.init(projectElement, options);
     }
   }, []);
 
   return (
-    // <Link href={`/projects/${id}`}>
     <div className="project" ref={projectRef}>
       <h3>{title}</h3>
       <div className="content">
@@ -57,6 +59,5 @@ export default function ListItemProjects({ project }: Props) {
         </div>
       </div>
     </div>
-    // {/* </Link> */}
   );
 }
