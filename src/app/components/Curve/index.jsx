@@ -19,7 +19,7 @@ export default function Curve() {
     },
     enter: {
       d: targetPath,
-      transition: { duration: 1.4, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
     },
     exit: {
       d: initialPath,
