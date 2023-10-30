@@ -150,7 +150,7 @@ export default function Navbar() {
                   );
                 })}
               </ul>
-              {/* <Curve /> */}
+              <Curve />
             </motion.div>
           )}
         </AnimatePresence>
