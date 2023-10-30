@@ -3,8 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import "../../style/components/_nav.scss";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isResponsiveNavOpen, setResponsiveNavOpen] = useState(false);
   const toggleResponsiveNav = () => {
     setResponsiveNavOpen(!isResponsiveNavOpen);
@@ -56,7 +58,11 @@ export default function Navbar() {
     <>
       <nav className={scrollDirection === "down" ? "hide" : "show"}>
         <div className={isResponsiveNavOpen ? "nav-home active" : "nav-home"}>
-          <Link href="/" onClick={closeResponsiveNav}>
+          <Link
+            href="/"
+            onClick={closeResponsiveNav}
+            className={`link ${pathname === "/" ? "active" : ""}`}
+          >
             <h4>Home</h4>
           </Link>
         </div>{" "}
@@ -65,17 +71,29 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <Link href="/projects" onClick={closeResponsiveNav}>
+              <Link
+                href="/projects"
+                className={` ${pathname === "/projects" ? "active" : ""}`}
+                onClick={closeResponsiveNav}
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/#about" onClick={closeResponsiveNav}>
+              <Link
+                href="/#about"
+                className={` ${pathname === "/" ? "active" : ""}`}
+                onClick={closeResponsiveNav}
+              >
                 About me
               </Link>
             </li>
             <li>
-              <Link href="/#contact" onClick={closeResponsiveNav}>
+              <Link
+                href="/#contact"
+                className={` ${pathname === "/" ? "active" : ""}`}
+                onClick={closeResponsiveNav}
+              >
                 Contact
               </Link>
             </li>

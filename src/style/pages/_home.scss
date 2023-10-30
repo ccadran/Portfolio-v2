@@ -52,13 +52,13 @@ main {
         margin-left: auto;
       }
 
-      &:after {
-        content: url(../../../public/assets/images/svg-deco.svg);
-        position: absolute;
-        right: 0;
-        top: 100px;
-        z-index: -2;
-      }
+      // &:after {
+      //   content: url(../../../public/assets/images/svg-deco.svg);
+      //   position: absolute;
+      //   right: 0;
+      //   top: 100px;
+      //   z-index: -2;
+      // }
     }
   }
 
@@ -99,16 +99,16 @@ main {
           height: 80%;
           object-fit: cover;
         }
-        &:after {
-          content: url(../../../public/assets/images/svg-deco.svg);
-          position: absolute;
-          right: -200px;
-          top: 300px;
-          z-index: -2;
-          @media screen and (max-width: 640px) {
-            content: "";
-          }
-        }
+        // &:after {
+        //   content: url(../../../public/assets/images/svg-deco.svg);
+        //   position: absolute;
+        //   right: -200px;
+        //   top: 300px;
+        //   z-index: -2;
+        //   @media screen and (max-width: 640px) {
+        //     content: "";
+        //   }
+        // }
       }
       p {
         width: 50%;
