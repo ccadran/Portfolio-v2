@@ -4,6 +4,22 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import "../../style/components/_nav.scss";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
+
+const menuSlide = {
+  initial: {
+    // x: "calc(100% + 100px)",
+    transform: "translateX(100%)",
+  },
+  enter: {
+    transform: "translateX(0%)",
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+  },
+  exit: {
+    transform: "translateX(100%)",
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+  },
+};
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -66,39 +82,49 @@ export default function Navbar() {
             <h4>Home</h4>
           </Link>
         </div>{" "}
-        <div
-          className={isResponsiveNavOpen ? "nav-links responsive" : "nav-links"}
-        >
-          <ul>
-            <li>
-              <Link
-                href="/projects"
-                className={` ${pathname === "/projects" ? "active" : ""}`}
-                onClick={closeResponsiveNav}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/#about"
-                className={` ${pathname === "/#about" ? "active" : ""}`}
-                onClick={closeResponsiveNav}
-              >
-                About me
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/#contact"
-                className={` ${pathname === "/#contact" ? "active" : ""}`}
-                onClick={closeResponsiveNav}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <AnimatePresence mode="wait">
+          {isResponsiveNavOpen && (
+            <motion.div
+              variants={menuSlide}
+              animate="enter"
+              exit="exit"
+              initial="initial"
+              className={
+                isResponsiveNavOpen ? "nav-links responsive" : "nav-links"
+              }
+            >
+              <ul>
+                <li>
+                  <Link
+                    href="/projects"
+                    className={` ${pathname === "/projects" ? "active" : ""}`}
+                    onClick={closeResponsiveNav}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#about"
+                    className={` ${pathname === "/#about" ? "active" : ""}`}
+                    onClick={closeResponsiveNav}
+                  >
+                    About me
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#contact"
+                    className={` ${pathname === "/#contact" ? "active" : ""}`}
+                    onClick={closeResponsiveNav}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <div
           className={isResponsiveNavOpen ? "toggle-btn active" : "toggle-btn"}
           onClick={toggleResponsiveNav}

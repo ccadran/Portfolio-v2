@@ -63,7 +63,7 @@ nav {
 .nav-links {
   align-items: center;
   @media screen and (max-width: 1120px) {
-    transform: translateX(100%);
+    // transform: translateX(100%);
     transition: 0.3s ease;
     position: fixed;
     top: 0;
@@ -166,7 +166,7 @@ nav {
     }
   }
   &.responsive {
-    transform: translateX(0%);
+    // transform: translateX(0%);
   }
 }
 
