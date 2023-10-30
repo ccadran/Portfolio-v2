@@ -131,11 +131,11 @@ export default function Navbar() {
                   return (
                     <motion.li
                       key={index}
-                      custom={index}
-                      variants={liSlide}
-                      animate="enter"
-                      exit="exit"
-                      initial="initial"
+                      // custom={index}
+                      // variants={liSlide}
+                      // animate="enter"
+                      // exit="exit"
+                      // initial="initial"
                     >
                       <Link
                         href={item.link}
