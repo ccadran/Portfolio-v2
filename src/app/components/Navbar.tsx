@@ -21,6 +21,38 @@ const menuSlide = {
     transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
   },
 };
+const liSlide = {
+  initial: {
+    opacity: 0,
+    transform: "translateX(50px)",
+  },
+  enter: (i) => ({
+    opacity: 1,
+    transform: "translateX(0px)",
+    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.15 * i },
+  }),
+  exit: (i) => ({
+    opacity: 0,
+    transform: "translateX(50px)",
+
+    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.15 * i },
+  }),
+};
+
+const navItems = [
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    name: "About me",
+    link: "/#about",
+  },
+  {
+    name: "Contact",
+    link: "/#contact",
+  },
+];
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -95,33 +127,28 @@ export default function Navbar() {
               }
             >
               <ul>
-                <li>
-                  <Link
-                    href="/projects"
-                    className={` ${pathname === "/projects" ? "active" : ""}`}
-                    onClick={closeResponsiveNav}
-                  >
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/#about"
-                    className={` ${pathname === "/#about" ? "active" : ""}`}
-                    onClick={closeResponsiveNav}
-                  >
-                    About me
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/#contact"
-                    className={` ${pathname === "/#contact" ? "active" : ""}`}
-                    onClick={closeResponsiveNav}
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {navItems.map((item, index) => {
+                  return (
+                    <motion.li
+                      key={index}
+                      custom={index}
+                      variants={liSlide}
+                      animate="enter"
+                      exit="exit"
+                      initial="initial"
+                    >
+                      <Link
+                        href={item.link}
+                        className={` ${
+                          pathname === item.link ? "active" : ""
+                        } `}
+                        onClick={closeResponsiveNav}
+                      >
+                        {item.name}
+                      </Link>
+                    </motion.li>
+                  );
+                })}
               </ul>
               <Curve />
             </motion.div>

@@ -81,7 +81,7 @@ nav {
     ul {
       display: flex;
       flex-direction: column;
-      transform: none;
+      // transform: none;
 
       a {
         margin: 18px clamp(30px, 6vw, 60px);
