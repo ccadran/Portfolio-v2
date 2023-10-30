@@ -26,12 +26,12 @@ const liSlide = {
     opacity: 0,
     transform: "translateX(50px)",
   },
-  enter: (i) => ({
+  enter: (i: number) => ({
     opacity: 1,
     transform: "translateX(0px)",
     transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
   }),
-  exit: (i) => ({
+  exit: (i: number) => ({
     opacity: 0,
     transform: "translateX(50px)",
 
