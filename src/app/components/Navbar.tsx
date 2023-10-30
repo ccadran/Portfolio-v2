@@ -14,7 +14,7 @@ const menuSlide = {
   },
   enter: {
     transform: "translateX(0%)",
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 1.4, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
     transform: "translateX(calc(100% + 100px))",
@@ -150,7 +150,7 @@ export default function Navbar() {
                   );
                 })}
               </ul>
-              {/* <Curve /> */}
+              <Curve />
             </motion.div>
           )}
         </AnimatePresence>
