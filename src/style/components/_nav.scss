@@ -81,7 +81,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 36px;
 
     ul {
       display: flex;
@@ -90,6 +89,7 @@ nav {
 
       a {
         margin: 18px clamp(30px, 6vw, 60px);
+        font-size: 36px;
         position: relative;
         display: inline-block;
         position: relative;
@@ -97,9 +97,6 @@ nav {
 
         &.active {
           text-decoration: underline;
-        }
-        li {
-          font-size: clamp(18px, 2vw, 24px);
         }
       }
     }

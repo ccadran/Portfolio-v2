@@ -13,7 +13,7 @@ const menuSlide = {
     transform: "translateX(calc(100% + 100px))",
   },
   enter: {
-    transform: "translateX(0%)",
+    transform: "translateX(10%)",
     transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
