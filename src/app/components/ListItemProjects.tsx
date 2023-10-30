@@ -27,7 +27,7 @@ export default function ListItemProjects({ project }: Props) {
     const projectElement = projectRef.current;
 
     const options = {
-      speed: 1000,
+      speed: 500,
       max: 10,
       glare: false,
       "max-glare": 20,
