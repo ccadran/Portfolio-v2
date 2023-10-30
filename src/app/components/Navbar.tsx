@@ -14,11 +14,11 @@ const menuSlide = {
   },
   enter: {
     transform: "translateX(0%)",
-    transition: { duration: 1.4, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
     transform: "translateX(calc(100% + 100px))",
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
 };
 const liSlide = {
@@ -29,13 +29,13 @@ const liSlide = {
   enter: (i: number) => ({
     opacity: 1,
     transform: "translateX(0px)",
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
+    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
   }),
   exit: (i: number) => ({
     opacity: 0,
     transform: "translateX(50px)",
 
-    transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
+    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1], delay: 0.3 * i },
   }),
 };
 
