@@ -4,7 +4,7 @@ projectType: "website"
 technologies: "NextJs-GSAP-Framer-motion"
 date: "18/10/2023"
 shortDescription: "Mon premier projet d’assez grande ampleur dans le domaine du creative development !
-Issu d’un tutoriel, j'ai décidé de l’adapter afin de mettre en avant certains de mes clichés.
+Issu d’un tutoriel, j'ai décidé de l’adapter afin de mettre en avant certaines de mes photos.
 
 "
 url: "https://photographer-portfolio-1.vercel.app/"
