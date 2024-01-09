@@ -1,5 +1,5 @@
 ---
-title: "Architecture Gallery"
+title: "Architect Gallery"
 projectType: "website"
 technologies: "NextJs-GSAP-Framer-motion"
 date: "07/11/2023"
