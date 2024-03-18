@@ -9,13 +9,13 @@ export default function Preloader() {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const words = [
     "Bienvenue",
-    "Welcome",
     "Bienvenido",
     "Willkommen",
     "欢迎",
     "Benvenuti",
     "مرحبا",
     "Bem-vindo",
+    "Welcome",
   ];
   useEffect(() => {
     setDimension({
