@@ -110,10 +110,16 @@ main {
           }
         }
       }
-      p {
+      .text-container {
+        display: flex;
+        flex-direction: column;
         width: 50%;
         @media screen and (max-width: 967px) {
           width: 100%;
+        }
+        p {
+          width: 100%;
+          margin-bottom: 32px;
         }
       }
     }

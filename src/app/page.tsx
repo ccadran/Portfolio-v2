@@ -6,6 +6,7 @@ import ProjectHome from "./components/ProjectHome";
 import "../style/pages/_home.scss";
 import Link from "next/link";
 import { Metadata } from "next";
+import Button from "./components/Button";
 import PageTransition from "./components/PageTransition";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -51,19 +52,28 @@ export default function Home() {
           <div className="img-container">
             <img src="/assets/images/about.jpg" alt="" />
           </div>
-          <p>
-            Bienvenue sur mon Portfolio ! <br />
-            <br />
-            Je suis Clario Cadran, passionné par le développement web dans son
-            ensemble et pour l’instant plus orienté sur le front-end. <br />
-            <br />
-            Je suis actuellement Étudiant en deuxième année du BUT MMI (Métiers
-            du Multimédia et de l’Internet) à Bordeaux.
-            <br />
-            <br />
-            Dans ce portfolio vous allez pouvoir retrouver tous les projets que
-            j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
-          </p>
+          <div className="text-container">
+            <p>
+              Bienvenue sur mon Portfolio ! <br />
+              <br />
+              Je suis Clario Cadran, passionné par le développement web dans son
+              ensemble et pour l’instant plus orienté sur le front-end. <br />
+              <br />
+              Je suis actuellement Étudiant en deuxième année du BUT MMI
+              (Métiers du Multimédia et de l’Internet) à Bordeaux.
+              <br />
+              <br />
+              Dans ce portfolio vous allez pouvoir retrouver tous les projets
+              que j’ai pu réaliser dans le cadre de mes études et à côté de
+              celles-ci.
+            </p>
+            <Button
+              link="/assets/CV_Clario_Cadran_2024.pdf"
+              text="Voir mon CV"
+              newTab={true}
+            />
+          </div>
+          {/* <Button link={`/projects/`} text="Voir le projet" newTab={false} /> */}
         </div>
       </section>
       <section className="projects-home">
