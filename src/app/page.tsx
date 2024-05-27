@@ -68,7 +68,7 @@ export default function Home() {
               celles-ci.
             </p>
             <Button
-              link="/assets/CV_Clario_Cadran_2024.pdf"
+              link="/assets/CV_Clario_Cadran.pdf"
               text="Voir mon CV"
               newTab={true}
             />
