@@ -89,7 +89,17 @@ export default async function Project({
         <div className="img-project">
           {illustrationsImgs.map((illustrationImg) => (
             <div className="img-container" key={illustrationImg}>
-              <img src={illustrationImg} alt="" />
+              {illustrationImg.endsWith(".jpg") ||
+              illustrationImg.endsWith(".png") ? (
+                <img src={illustrationImg} alt="" />
+              ) : illustrationImg.endsWith(".mp4") ? (
+                <video controls>
+                  <source src={illustrationImg} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <p>Format non pris en charge</p>
+              )}
             </div>
           ))}
         </div>

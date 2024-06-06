@@ -9,7 +9,7 @@ Issu d’un tutoriel, j'ai décidé de l’adapter afin de mettre en avant certa
 "
 url: "https://photographer-portfolio-1.vercel.app/"
 mainImg: "/assets/images/photographer-porfolio/cover.png"
-illustrationsImgs: ["/assets/images/photographer-porfolio/illustration-1.gif", "/assets/images/photographer-porfolio/illustration-2.gif","/assets/images/photographer-porfolio/illustration-3.gif","/assets/images/photographer-porfolio/illustration-4.gif","/assets/images/photographer-porfolio/illustration-5.gif"]
+illustrationsImgs: ["/assets/images/photographer-porfolio/illustration-1.mp4", "/assets/images/photographer-porfolio/illustration-2.mp4","/assets/images/photographer-porfolio/illustration-3.mp4","/assets/images/photographer-porfolio/illustration-4.mp4","/assets/images/photographer-porfolio/illustration-5.mp4"]
 longDescription: "Ce projet m’a permis de mettre le pied à l’étrier dans le domaine du creative coding, j’ai en effet pu apprendre les bases de deux librairies très importantes dans ce domaine, GSAP et Framer-Motion.
 J’ai donc réalisé ce projet dans le cadre d’une formation en ligne et je l’ai ensuite adapté pour y disposer plusieurs de mes photos.
 (No responsive)
