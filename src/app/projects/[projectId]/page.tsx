@@ -91,7 +91,7 @@ export default async function Project({
             <div className="img-container" key={illustrationImg}>
               {illustrationImg.endsWith(".jpg") ||
               illustrationImg.endsWith(".png") ? (
-                <img src={illustrationImg} alt="" />
+                <img src={illustrationImg} />
               ) : illustrationImg.endsWith(".mp4") ? (
                 <video autoPlay loop>
                   <source src={illustrationImg} type="video/mp4" />
