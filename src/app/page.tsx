@@ -48,7 +48,7 @@ export default function Home() {
               Dans ce portfolio vous allez pouvoir retrouver certains projets que j’ai réalisés, que ce soit dans le cadre de mes études ou durant mon temps libre.
             </p>
             <Button
-              link="/assets/CV_Clario_Cadran.pdf"
+              link="/assets/CV_Clario_CADRAN_2025.pdf"
               text="Voir mon CV"
               newTab={true}
             />
