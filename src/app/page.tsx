@@ -23,21 +23,9 @@ export const metadata: Metadata = {
   },
 };
 export default function Home() {
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => {
-  //   (async () => {
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //       document.body.style.cursor = "default";
-  //       window.scrollTo(0, 0);
-  //     }, 2000);
-  //   })();
-  // }, []);
+  
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence> */}
       <PageTransition title="Clario Cadran"></PageTransition>
       <section className="hero">
         <h1 data-scroll data-scroll-speed="0.3">
@@ -56,16 +44,8 @@ export default function Home() {
             <p>
               Bienvenue sur mon Portfolio ! <br />
               <br />
-              Je suis Clario Cadran, passionné par le développement web dans son
-              ensemble et pour l’instant plus orienté sur le front-end. <br />
-              <br />
-              Je suis actuellement Étudiant en deuxième année du BUT MMI
-              (Métiers du Multimédia et de l’Internet) à Bordeaux.
-              <br />
-              <br />
-              Dans ce portfolio vous allez pouvoir retrouver tous les projets
-              que j’ai pu réaliser dans le cadre de mes études et à côté de
-              celles-ci.
+              Je suis un développeur front-end, actuellement en alternance chez <a href="https://studio9p.com/">Studio9p</a> dans le cadre de ma troisième année de BUT MMI (Métiers du Multimédia et de l’Internet). <br /> <br />
+              Dans ce portfolio vous allez pouvoir retrouver certains projets que j’ai réalisés, que ce soit dans le cadre de mes études ou durant mon temps libre.
             </p>
             <Button
               link="/assets/CV_Clario_Cadran.pdf"
@@ -73,7 +53,6 @@ export default function Home() {
               newTab={true}
             />
           </div>
-          {/* <Button link={`/projects/`} text="Voir le projet" newTab={false} /> */}
         </div>
       </section>
       <section className="projects-home">
