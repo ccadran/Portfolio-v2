@@ -93,7 +93,7 @@ export default async function Project({
               illustrationImg.endsWith(".png") ? (
                 <img src={illustrationImg} />
               ) : illustrationImg.endsWith(".mp4") ? (
-                <video autoPlay loop>
+                <video autoPlay loop muted>
                   <source src={illustrationImg} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
