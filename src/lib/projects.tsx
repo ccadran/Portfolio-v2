@@ -17,6 +17,17 @@ export function getSortedProjectData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
+    // Construction de l'objet tools avec vérification de toolsDescription
+    const tools: { logos: any; urlGithub: any; toolsDescription?: any } = {
+      logos: matterResult.data.tools.logos,
+      urlGithub: matterResult.data.tools.urlGithub,
+    };
+
+    // Ajouter toolsDescription seulement s'il existe
+    if (matterResult.data.tools.toolsDescription) {
+      tools.toolsDescription = matterResult.data.tools.toolsDescription;
+    }
+
     const project: Project = {
       id,
       title: matterResult.data.title,
@@ -28,11 +39,7 @@ export function getSortedProjectData() {
       mainImg: matterResult.data.mainImg,
       illustrationsImgs: matterResult.data.illustrationsImgs,
       longDescription: matterResult.data.longDescription,
-      tools: {
-        logos: matterResult.data.tools.logos,
-        toolsDescription: matterResult.data.tools.toolsDescription,
-        urlGithub: matterResult.data.tools.urlGithub,
-      },
+      tools,
       note: matterResult.data.note,
     };
 
@@ -56,6 +63,17 @@ export async function getProjectData(id: string) {
 
   const contentHtml = processedContent.toString();
 
+  // Construction de l'objet tools avec vérification de toolsDescription
+  const tools: { logos: any; urlGithub: any; toolsDescription?: any } = {
+    logos: matterResult.data.tools.logos,
+    urlGithub: matterResult.data.tools.urlGithub,
+  };
+
+  // Ajouter toolsDescription seulement s'il existe
+  if (matterResult.data.tools.toolsDescription) {
+    tools.toolsDescription = matterResult.data.tools.toolsDescription;
+  }
+
   const projectPostWithHTML: Project & { contentHtml: string } = {
     id,
     title: matterResult.data.title,
@@ -67,11 +85,7 @@ export async function getProjectData(id: string) {
     mainImg: matterResult.data.mainImg,
     illustrationsImgs: matterResult.data.illustrationsImgs,
     longDescription: matterResult.data.longDescription,
-    tools: {
-      logos: matterResult.data.tools.logos,
-      toolsDescription: matterResult.data.tools.toolsDescription,
-      urlGithub: matterResult.data.tools.urlGithub,
-    },
+    tools,
     note: matterResult.data.note,
     contentHtml,
   };
