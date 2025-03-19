@@ -104,6 +104,7 @@ export default async function Project({
           ))}
         </div>
       </section>
+
       <section className="tools">
         <h2>Tools</h2>
         <div className="tools-container">
@@ -114,7 +115,9 @@ export default async function Project({
               </li>
             ))}
           </ul>
+          {tools.toolsDescription&&
           <p>{tools.toolsDescription}</p>
+          }
           <Button link={tools.urlGithub} text="Voir le code" newTab={true} />
         </div>
       </section>
