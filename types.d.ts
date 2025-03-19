@@ -11,7 +11,7 @@ type Project = {
   longDescription: string;
   tools: {
     logos: string;
-    toolsDescription: string;
+    toolsDescription?: string;
     urlGithub: string;
   };
   note: number;
