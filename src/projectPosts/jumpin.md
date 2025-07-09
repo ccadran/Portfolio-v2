@@ -22,7 +22,7 @@ longDescription: |
   Ce projet, qui est actuellement la réalisation la plus complexe de mon parcours en termes de backend, m'a permis d'acquérir des compétences approfondies en authentification, gestion de base de données, tests et architecture d'un projet d'envergure.
 tools:
   logos: "VsCode, Nuxt, Supabase"
-  toolsDescription: "test"
+  toolsDescription: ""
   urlGithub: "https://github.com/ccadran/Jump-in"
 note: 80
 ---

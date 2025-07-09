@@ -26,7 +26,7 @@ longDescription: |
   En plus de cela, je me suis occupé de développer le Hub qui redirige vers les expériences.
 tools:
   logos: "VsCode, Javascript, GSAP"
-  toolsDescription: "test"
+  toolsDescription: ""
   urlGithub: "https://github.com/nuit-musee-musba/experience-2025"
 note: 70
 ---

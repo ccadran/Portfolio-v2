@@ -24,7 +24,7 @@ longDescription: |
   Ce projet m'a énormément appris, aussi bien en bonnes pratiques qu'en organisation de projet à grande échelle.
 tools:
   logos: "VsCode, Nuxt, GSAP, ThreeJs, Webflow, Scss"
-  toolsDescription: "test"
+  toolsDescription: ""
   urlGithub: "https://github.com/ccadran/"
 note: 81
 ---

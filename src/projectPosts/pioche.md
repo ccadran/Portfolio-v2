@@ -24,7 +24,7 @@ longDescription: |
   Ce projet m'a permis de monter en compétences sur Nuxt.js, car après l'avoir utilisé en entreprise, c'était la première fois que je l'exploitais du début à la fin d'un projet, ce qui m'a permis de découvrir de nombreuses fonctionnalités.
 tools:
   logos: "VsCode, Nuxt, Supabase"
-  toolsDescription: "test"
+  toolsDescription: ""
   urlGithub: "https://github.com/ccadran/media-pioche"
 note: 70
 ---
