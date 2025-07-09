@@ -8,18 +8,25 @@ url: "https://nuit-du-musba-2025.netlify.app/"
 mainImg: "/assets/images/musba-night/cover.png"
 illustrationsImgs:
   [
-    "/assets/images/architecture-gallery/illustration-1.mp4",
-    "/assets/images/architecture-gallery/illustration-2.mp4",
-    "/assets/images/architecture-gallery/illustration-3.mp4",
-    "/assets/images/architecture-gallery/illustration-4.mp4",
-    "/assets/images/architecture-gallery/illustration-5.mp4",
-    "/assets/images/architecture-gallery/illustration-6.mp4",
+    "/assets/images/musba-night/musba-1.mp4",
+    "/assets/images/musba-night/musba-2.mp4",
+    "/assets/images/musba-night/musba-3.mp4",
   ]
-longDescription: "Dans le cadre de la nuit européenne des musées, notre promo a eu à réaliser des expériences interactives pour une installation du Musée des Beaux-Arts de Bordeaux.Pour ce projet, je faisais partie du groupe d’organisation et j’ai donc, pendant 2 semaines, occupé le rôle de lead dev.Après discussion, nous avons choisi d’utiliser du JavaScript vanilla.J’ai donc rédigé un README détaillant l’architecture du projet, notre méthode de travail avec les branches GitHub, et les bonnes pratiques à suivre.Étant donné que nous avions des éléments d’UI communs, je me suis occupé de les développer en utilisant des classes afin que chaque groupe puisse les étendre en fonction de leurs besoins.En plus de cela, je me suis occupé de développer le Hub qui redirige vers les expériences."
+longDescription: |
+  Dans le cadre de la nuit européenne des musées, notre promo a eu à réaliser des expériences interactives pour une installation du Musée des Beaux-Arts de Bordeaux.
+
+  Pour ce projet, je faisais partie du groupe d'organisation et j'ai donc, pendant 2 semaines, occupé le rôle de lead dev.
+
+  Après discussion, nous avons choisi d'utiliser du JavaScript vanilla.
+
+  J'ai donc rédigé un README détaillant l'architecture du projet, notre méthode de travail avec les branches GitHub, et les bonnes pratiques à suivre.
+
+  Étant donné que nous avions des éléments d'UI communs, je me suis occupé de les développer en utilisant des classes afin que chaque groupe puisse les étendre en fonction de leurs besoins.
+
+  En plus de cela, je me suis occupé de développer le Hub qui redirige vers les expériences.
 tools:
   logos: "VsCode, Javascript, GSAP"
-  toolsDescription: "Dans ce projet, j'ai utilisé beaucoup d'animations différentes. Pour le slider du Hero, j'ai utilisé pas mal de timeline GSAP, afin d'ajouter plusieurs effets en fonction d'une condition et ajouter du délai sur une timeline entière.Pour la section de la description ou la graisse de la font augmente en fonction du scroll, je me suis servi du “ScrollYProgress” de framer-motion après avoir split ma description et placé toutes mes lettres dans des span que j'ai ensuite sélectionné avec un querySelectorAll pour les animer."
-  urlGithub: "https://github.com/ccadran/Architecture-gallery"
-
-note: 83
+  toolsDescription: "test"
+  urlGithub: "https://github.com/nuit-musee-musba/experience-2025"
+note: 70
 ---

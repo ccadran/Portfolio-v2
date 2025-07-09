@@ -16,6 +16,7 @@ export function getSortedProjectData() {
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
+    console.log("________________", matterResult);
 
     // Construction de l'objet tools avec vérification de toolsDescription
     const tools: { logos: any; urlGithub: any; toolsDescription?: any } = {
