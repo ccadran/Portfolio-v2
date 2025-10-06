@@ -5,7 +5,7 @@ technologies: "Nuxt.js-Supabase"
 date: "24/02/2025"
 shortDescription: "Jump'in est un réseau social permettant aux utilisateurs de se regrouper par centres d'intérêt et de se lancer des défis. Développé avec Nuxt.js et Supabase, j'ai implémenté une API REST en utilisant le TDD, géré l'authentification et l'architecture complète de la base de données."
 url: "https://jump-in.netlify.app/"
-mainImg: "/assets/images/jumpin/cover.png"
+mainImg: "/assets/images/jumpin/cover.jpg"
 illustrationsImgs:
   [
     "/assets/images/jumpin/jumpin-1.mp4",

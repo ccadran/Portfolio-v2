@@ -5,7 +5,7 @@ technologies: "Nuxt.js-Supabase"
 date: "30/01/2025"
 shortDescription: "Développé en 2 semaines, Pioche est une PWA visant à reconnecter les jeunes à l'actualité grâce à un système de swipe intuitif. J'ai participé au design et développé l'application avec Nuxt.js et Supabase."
 url: "https://www.whoisricky.lol/"
-mainImg: "/assets/images/pioche/cover.png"
+mainImg: "/assets/images/pioche/cover.jpg"
 illustrationsImgs:
   [
     "/assets/images/pioche/pioche-1.mp4",

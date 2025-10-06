@@ -5,7 +5,7 @@ technologies: "Webflow-Three.js-Nuxt.js-GSAP"
 date: "14/12/2024"
 shortDescription: "Projet concept réalisé chez Studio 9P qui a remporté un 'Site of the Day' sur CSS Design Awards et GSAP. J'ai contribué au motion design, créé des POC avec Three.js et GSAP, intégré l'ensemble des maquettes sur Webflow et j'ai également développé certaines animations plus complexes avec du code custom."
 url: "https://www.whoisricky.lol/"
-mainImg: "/assets/images/ricky/cover.png"
+mainImg: "/assets/images/ricky/cover.jpg"
 illustrationsImgs:
   [
     "/assets/images/ricky/ricky-1.mp4",

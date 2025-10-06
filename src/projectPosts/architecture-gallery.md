@@ -5,7 +5,7 @@ technologies: "NextJs-GSAP-Framer-motion"
 date: "07/11/2023"
 shortDescription: "Mon premier projet de creative coding réaliser à partir de zéro ! À partir d'une animation trouvée sur Dribble, j'ai designé et développer une landing page complète afin de valider mon apprentissage de GSAP et Framer-motion."
 url: "https://architecture-gallery-nine.vercel.app/"
-mainImg: "/assets/images/architecture-gallery/cover.png"
+mainImg: "/assets/images/architecture-gallery/cover.jpg"
 illustrationsImgs:
   [
     "/assets/images/architecture-gallery/illustration-1.mp4",
